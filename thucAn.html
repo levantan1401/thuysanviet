@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="./assets/img/Home/Logo.jpg" type="image/x-icon">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thức ăn nuôi tôm thẻ TT662 20Kg</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+     <!-- CKEDiTOR -->
+     <script src="https://cdn.ckeditor.com/ckeditor5/27.1.0/decoupled-document/ckeditor.js"></script>
+     <link rel="stylesheet" href="./assets/fonts/fontawesome-free-5.15.3-web/css/all.min.css">
+     <link rel="stylesheet" href="./assets/fonts/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="./assets/css/thucan.css">
+    <!-- <link rel="stylesheet" href="./assets/css/reponsive_homepage.css"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="main">
+        <!-- HEADER  -->
+        <div class="header__nho" data-aos="fade">
+            <div class="header__nho-Social-Network">
+                <ul class="Social-Network__ul">
+                    <li class="Social-Network__li">
+                        <i class="ti-facebook"></i>
+                    </li>
+                    <li class="Social-Network__li">
+                        <i class="ti-pinterest"></i>
+                    </li>
+                    <li class="Social-Network__li">
+                        <i class="ti-twitter"></i>
+                    </li>
+                    <li class="Social-Network__li">
+                        <i class="ti-skype"></i>
+                    </li>
+                    <li class="Social-Network__li">
+                        <i class="ti-instagram"></i>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="header__nho-item">
+                <ul class="header__nho-item-ul">
+                    <li class="header__nho_search">
+                        <div class="input-group-append">
+                            <input style="border-radius: 20px;border:none; outline: none; padding-left: 12px;"
+                                type="text" placeholder="Search">
+                            <button style="border-radius: 20px;" class="btn btn-info ti-search" type="submit"></button>
+                        </div>
+                    </li>
+                    <li class="header__nho-item-li header__nho-item-li-lag">
+                        <a href="#" class="link link1"><i class="header__nho-item_ke-doc"> VI</i></a>
+                    </li>
+                    <li class="header__nho-item-li header__nho-item-li-lag">
+                        <a href="#" class="link"><i> EN</i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- END HEADER -->
+        <!-- NAV -->
+        <nav>
+            <ul>
+                <li>
+                    <div class="logo">
+                        <img style="width: 30%; margin-left: 35%;" src="../DoAnCoSo1/images/Logo1.jpg" alt="logo">
+                    </div>
+                </li>
+                <li><a href="./index.html">Trang Chủ<i class="" aria-hidden="true"></i></a></li>
+                <li><a href="./tintuc.html">Tin Tức<i class="" aria-hidden="true"></i></a></li>
+                <li><a href="./giaiphap.html">Giải pháp<i class="" aria-hidden="true"></i></a></li>
+                <li><a href="./sanpham.html">Sản phẩm</a></li>
+                <li><a href="./AboutUs.html">Giới thiệu <i class="" aria-hidden="true"></i></a></li>
+            </ul>
+            <ul class="nav-right">
+                <li><a href="./DangNhap.html"><i class="fa fa-user dangnhap" aria-hidden="true"
+                            style="font-size: 16px;"></i></a>
+                </li>
+                <li> <a href=""><i class="fa fa-bell dangnhap" aria-hidden="true" style="font-size: 16px;"></i>
+                    </a>
+
+                </li>
+                <li><a href="">
+                        <i class="fa fa-bars thanhmenu" aria-hidden="true" style="font-size: 16px;"></i></a></li>
+            </ul>
+            <!-- <div class="mobile_nav">
+                    <div class="user">
+                        <span><a href="./DangNhap.html"><i class="fa fa-user-circle"
+                                    style="font-size: 16px;"></i></a></span>
+                    </div>
+                    <div class="thanh_menu">
+                        <span onclick="OpenNav()"><i class="fa fa-bars" style="font-size: 16px; color: #000;"></i></span>
+                    </div>
+                    <div class="logo_mobile">
+                        <div class="logo_main text-center">
+                            <img style="width: 30%; margin-left: 35%;" src="../DoAnCoSo1/images/Logo1.jpg" alt="logo">
+                        </div>
+                    </div>
+                    <div id="slide_nav_moblie" class="sidenav">
+                        <p class="closebtn" onclick="CloseNav()">&times;</p>
+                        <a href="./index.html">Trang Chủ<i class="" aria-hidden="true"></i></a>
+                        <a href="./tintuc.html">Tin Tức<i class="" aria-hidden="true"></i></a>
+                        <a href="./giaiphap.html">Giải pháp<i class="" aria-hidden="true"></i></a>
+                        <a href="./sanpham.html">Sản phẩm</a></li>
+                        <a href="./AboutUs.html">Giới thiệu <i class="" aria-hidden="true"></i></a>
+                    </div>
+                </div> -->
+        </nav>
+        <!-- END NAV -->
+        <!-- CONTENT -->
+        <div id="content" style="margin-bottom: 40px;" >
+            <div class="container" >
+                <div class="header-content mt-5"  >
+                    <div class="row">
+                        <div class="col-sm-12 col-md-6 col-xl-6">
+                            <!-- SLIDE SHOW -->
+                            <div class="header-content-left">
+                                <div class="card-carousel">
+                                    <div class="my-card">
+                                        <img src="./assets/img/SanPham/thuc_an.png" alt="" class="w-100">
+                                    </div>
+                                    <div class="my-card">
+                                        <img src="./assets/img/SanPham/thuc_an.png" alt="" class="w-100">
+
+                                    </div>
+                                    <div class="my-card">
+                                        <img src="./assets/img/SanPham/thuc_an.png" alt="" class="w-100">
+
+                                    </div>
+                                    <div class="my-card">
+                                        <img src="./assets/img/SanPham/thuc_an.png" alt="" class="w-100">
+
+                                    </div>
+                                    <div class="my-card">
+                                        <img src="./assets/img/SanPham/thuc_an.png" alt="" class="w-100">
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- END SLIDE SHOW -->
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-xl-6">
+                            <div class="header-content-right">
+                                <h1 style="margin-bottom: 16px">Aqua Tech 700</h1>
+                                <p><span style="font-size: 16px; font-weight: 500;">Xuất Xứ: </span>Mỹ<span
+                                        style="border-left: 2px solid black; margin: 0 12px;"></span>
+                                    <span style="font-size: 16px; font-weight: 500;">Tình Trạng: </span> Hàng mới về
+                                </p>
+                                <p> Một vấn đề cần lưu ý nữa là khi trong thức ăn không có đủ vitamin, khoáng sẽ dẫn đến
+                                    tôm bị một số bệnh như thiếu vitamin C tôm rất dễ cong thân, đục thân và chết. Do
+                                    vậy cũng nên dùng các chế phẩm sinh học dành cho tôm do Mebipha sản xuất để trộn vào
+                                    thức ăn để tăng khả năng tiêu hóa thức ăn của tôm. …</p>
+                                <hr>
+                                <div class="addcart">
+                                    <div class="soluong" style="display: flex; margin-left: 34px;">
+                                        <b style="font-size: 16px; font-weight: 500;">Số lượng: </b>
+                                        <div class="qty">
+                                            <span class="minus bg-dark">-</span>
+                                            <input type="number" class="count" name="qty" value="1">
+                                            <span class="plus bg-dark">+</span>
+                                        </div>
+                                    </div>
+                                    <div class="them_vao_gio_hang">
+                                        <input type="submit" value="Thêm vào giỏ hàng" class="btn btn-success">
+                                    </div>
+                                </div>
+                                <p style="margin-top: 100px;"> Để được tư vấn mua hàng <span
+                                        style="color: olivedrab;font-size: 16px;font-weight: 500;">Hãy
+                                        Liên hệ: 0946252210</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 3 Mục Mô tả sản phẩm
+                    Nguồn gốc
+                    đánh giá -->
+                <div class="content-center">
+                    <ul class="nav nav-tabs">
+                        <li class="nav-item">
+                            <a class="nav-link active" data-toggle="tab" href="#nguongoc">Hướng Dẫn</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#sanpham">Sản Phẩm</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#danhgia">Đánh Giá</a>
+                        </li>
+                    </ul>
+
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                        <!-- nguồn gốc -->
+                        <div id="nguongoc" class="container tab-pane active"><br>
+                            <h1 style="margin-bottom: 12px;">Cách chăm sóc</h1>
+                            <h5>1 Chuẩn bị giống chọn lọc</h5>
+                            <p>Về cơ bản thì có thể chia các loại thức ăn của tôm thành 3 loại cơ bản sau:
+
+                                Thức ăn công nghiệp được sản xuất và cung cấp bởi các nhà máy sản xuất thức ăn của
+                                tôm.
+                                Thức ăn tự nhiên gồm các động thực vật phù du, các mùn bã hữu cơ …
+                                Thức ăn tự chế được sản xuất từ nguồn nguyên liệu sẵn có như ốc, cá tạp, các phế phụ
+                                phẩm trong nông nghiệp.
+                                Tất nhiên là tùy vào loại tôm, tùy vào thời kỳ nuôi mà bà con nên điều chỉnh xem là
+                                chọn mua loại thức ăn cho tôm nào hợp lý nhất.</p>
+                            <p>Về cơ bản thì có thể chia các loại thức ăn của tôm thành 3 loại cơ bản sau:
+
+                                Thức ăn công nghiệp được sản xuất và cung cấp bởi các nhà máy sản xuất thức ăn của
+                                tôm.
+                                Thức ăn tự nhiên gồm các động thực vật phù du, các mùn bã hữu cơ …
+                                Thức ăn tự chế được sản xuất từ nguồn nguyên liệu sẵn có như ốc, cá tạp, các phế phụ
+                                phẩm trong nông nghiệp.
+                                Tất nhiên là tùy vào loại tôm, tùy vào thời kỳ nuôi mà bà con nên điều chỉnh xem là
+                                chọn mua loại thức ăn cho tôm nào hợp lý nhất.</p>
+                            <div class="anh-nguon-goc">
+                                <img src="./assets/img/tintuc/nuoitom.png" alt="">
+                                <p>Cây Sầu Riêng Chuẩn VIETGAP</p>
+                            </div>
+                            <h5> ► Các loại thức ăn cho tôm thẻ chân trắng</h5>
+                            <p>Việc quản lý và sử dụng thức ăn cho nuôi tôm thẻ là rất quan trọng vì nó ảnh hưởng trực
+                                tiếp đến giá thành nuôi tôm, bên cạnh đó nếu thức ăn dư thừa sẽ làm ô nhiễm môi trường.
+                                Với những mô hình như nuôi tôm thẻ chân trắng trong nhà kính, việc cho tôm thẻ chân
+                                trắng ăn gì theo đúng quy tắc là điều bắt buộc. Hiện có ba loại thức ăn chính dành cho
+                                tôm thẻ chân trắng:
+                                Sau khi cấp nước 2 ngày, cần tiến hành gây màu nước trong ao nuôi tôm để giúp phát triển
+                                các hệ vi sinh vật phù du, ổn định môi trường nước. Tuy nhiên, trong giai đoạn đầu mới
+                                thả, rất khó ổn định màu nước, nguồn thức ăn tự nhiên ít.</p>
+                            <ul>
+                                <li>Thức ăn công nghiệp được cung cấp bởi các nhà máy sản xuất thức ăn cho tôm. </li>
+                                <li>Thức ăn tự nhiên bao gồm: các động thực vật phù du, các mùn bã hữu cơ … </li>
+                                <li> Thức ăn tự chế được sản xuất từ nguồn nguyên liệu sẵn có như ốc, cá tạp, các phế
+                                    phụ phẩm trong nông nghiệp.</li>
+                            </ul>
+                            <p>- Mật độ trồng tùy thuộc vào chất đất và mức đầu tư thâm canh. Thông thường khoảng cách
+                                trồng cây cách cây 3 x 3 m, mật độ 1.000 – 1.200 cây/ha.</p>
+                            <div class="anh-nguon-goc">
+                                <img src="./assets/img/tintuc/tom_con_thuc_an.jpg" alt="">
+                                <p>Mô Hình Trồng đảm bảo chất lượng</p>
+                            </div>
+                            <h5> ► Cách cho tôm thẻ chân trắng ăn đúng cách</h5>
+                            <p>Khi tôm thả 7 – 10 ngày, cho tôm ăn cách bờ 2 – 4m. Thức ăn ở giai đoạn này là dạng bột
+                                mịn, vì vậy cần tắt quạt nước và trộn thức ăn với nước rồi tạt xuống ao.</p>
+                            <p>Sàng đặt nơi bằng phẳng, cách bờ 1,5 – 2m, sau cánh quạt nước 12 – 15cm, không đặt ở góc
+                                ao, khoảng 1.600 – 2.000m2 đặt một sàng.
+                            </p>
+                            <h5> ► Lượng thức ăn</h5>
+                            <p>Đối với tôm thẻ chân trắng, ngày đầu tiên cho 2,8 – 3 kg/100.000 giống. Trong 10 ngày đầu
+                                tiên, cứ 1 ngày tăng 0,4 kg/100.000 giống. Từ ngày thứ 10 đến 20, cứ 1 ngày tăng 0,5
+                                kg/100.000 giống.</p>
+                            <div class="anh-nguon-goc">
+                                <img src="./assets/img/tintuc/aoho.jpg" alt="">
+
+                            </div>
+                            <p>Thời điểm thu hoạch chọn ngày nắng ráo. Khi thu hoạch cần tránh làm quả trầy xước, sau đó
+                                tách ra từng nải xử lý, đóng gói và vận chuyển đến nơi tiêu thụ.</p>
+                            <p>Cần ghi chép đầy đủ nhật ký các thông tin về thời gian chăm sóc theo quy trình kỹ thuật,
+                                thời gian thu hoạch đóng gói, các biện pháp kỹ thuật tác động cụ thể để dễ ràng truy
+                                nguyên nguồn gốc, đảm bảo an toàn sản phẩm. </p>
+
+                        </div>
+                        <!-- sản phẩm từ trái trên -->
+                        <div id="sanpham" class="container tab-pane fade"><br>
+                            <!-- THONG TIN SAN PHAM -->
+                            <div class="member">
+
+                                <div class="member__list">
+                                    <div class="member__item">
+                                        <div class="member_img">
+                                            <img src="./assets/img/SanPham/tom1.jpg" alt="BANH_MI_THANH_LONG">
+                                        </div>
+                                        <div class="member_text">
+                                            <h2>Phòng và trị bệnh đường ruột</h2>
+                                            <p> Trong trường hợp trời nắng đẹp, tảo phát triển mạnh, thức ăn tự nhiên
+                                                phong phú kiểm tra ruột tôm thấy có nhiều thức ăn tự nhiên. Hoặc trong
+                                                những trường hợp thấy các yếu tố môi trường thay đổi đột ngột: xuất hiện
+                                                khí amonia tăng lên đột ngột nên ngừng cho ăn từ 1-2 ngày, kết hợp với
+                                                cho thức ăn vào nhá để kiểm tra hoạt động bắt mồi của tôm điều chỉnh
+                                                thức ăn cho phù hợp.</p>
+                                            <p>Giai đoạn tôm từ 1-40 ngày nên dùng thức ăn có hàm lượng prôtein cao
+                                                40-50%. Từ ngày 41 trở đi đến lúc bắt bán thì cho ăn thức ăn có hàm
+                                                lượng protein 30-35%..</p>
+                                        </div>
+                                    </div>
+                                    <div class="member__item">
+                                        <div class="member_img">
+                                            <img src="./assets/img/SanPham/tom2.jpg" alt="BANH_MI_THANH_LONG">
+                                        </div>
+                                        <div class="member_text">
+                                            <h2>Phòng và trị bệnh đường ruột</h2>
+                                            <p> Trong trường hợp trời nắng đẹp, tảo phát triển mạnh, thức ăn tự nhiên
+                                                phong phú kiểm tra ruột tôm thấy có nhiều thức ăn tự nhiên. Hoặc trong
+                                                những trường hợp thấy các yếu tố môi trường thay đổi đột ngột: xuất hiện
+                                                khí amonia tăng lên đột ngột nên ngừng cho ăn từ 1-2 ngày, kết hợp với
+                                                cho thức ăn vào nhá để kiểm tra hoạt động bắt mồi của tôm điều chỉnh
+                                                thức ăn cho phù hợp.</p>
+                                            <p>Giai đoạn tôm từ 1-40 ngày nên dùng thức ăn có hàm lượng prôtein cao
+                                                40-50%. Từ ngày 41 trở đi đến lúc bắt bán thì cho ăn thức ăn có hàm
+                                                lượng protein 30-35%..</p>
+                                        </div>
+                                    </div>
+                                    <div class="member__item">
+                                        <div class="member_img">
+                                            <img src="./assets/img/SanPham/tom3.jpg" alt="BANH_MI_THANH_LONG">
+                                        </div>
+                                        <div class="member_text">
+                                            <h2>Phòng và trị bệnh đường ruột</h2>
+                                            <p> Trong trường hợp trời nắng đẹp, tảo phát triển mạnh, thức ăn tự nhiên
+                                                phong phú kiểm tra ruột tôm thấy có nhiều thức ăn tự nhiên. Hoặc trong
+                                                những trường hợp thấy các yếu tố môi trường thay đổi đột ngột: xuất hiện
+                                                khí amonia tăng lên đột ngột nên ngừng cho ăn từ 1-2 ngày, kết hợp với
+                                                cho thức ăn vào nhá để kiểm tra hoạt động bắt mồi của tôm điều chỉnh
+                                                thức ăn cho phù hợp.</p>
+                                            <p>Giai đoạn tôm từ 1-40 ngày nên dùng thức ăn có hàm lượng prôtein cao
+                                                40-50%. Từ ngày 41 trở đi đến lúc bắt bán thì cho ăn thức ăn có hàm
+                                                lượng protein 30-35%..</p>
+                                        </div>
+                                    </div>
+                                    <div class="member_footer">
+                                        <div class="container">
+                                            <strong>SẢN PHẨM NỔI BẬT</strong>
+                                            <p>BiO - Cải Thiện Đời sống bà con</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- END THANH VIEN -->
+
+                        </div>
+                        <!-- đánh giá của khách hàng -->
+                        <div id="danhgia" class="container tab-pane fade"><br>
+                            <h3>ĐÁNH GIÁ</h3>
+                            <div class="thongke">
+                                <span class="heading">User Rating</span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <p>4.1 average based on 254 reviews.</p>
+                                <hr style="border:3px solid #f1f1f1">
+
+                                <div class="row">
+                                    <div class="side">
+                                        <div>5 star</div>
+                                    </div>
+                                    <div class="middle">
+                                        <div class="bar-container">
+                                            <div class="bar-5"></div>
+                                        </div>
+                                    </div>
+                                    <div class="side right">
+                                        <div>150</div>
+                                    </div>
+                                    <div class="side">
+                                        <div>4 star</div>
+                                    </div>
+                                    <div class="middle">
+                                        <div class="bar-container">
+                                            <div class="bar-4"></div>
+                                        </div>
+                                    </div>
+                                    <div class="side right">
+                                        <div>63</div>
+                                    </div>
+                                    <div class="side">
+                                        <div>3 star</div>
+                                    </div>
+                                    <div class="middle">
+                                        <div class="bar-container">
+                                            <div class="bar-3"></div>
+                                        </div>
+                                    </div>
+                                    <div class="side right">
+                                        <div>15</div>
+                                    </div>
+                                    <div class="side">
+                                        <div>2 star</div>
+                                    </div>
+                                    <div class="middle">
+                                        <div class="bar-container">
+                                            <div class="bar-2"></div>
+                                        </div>
+                                    </div>
+                                    <div class="side right">
+                                        <div>6</div>
+                                    </div>
+                                    <div class="side">
+                                        <div>1 star</div>
+                                    </div>
+                                    <div class="middle">
+                                        <div class="bar-container">
+                                            <div class="bar-1"></div>
+                                        </div>
+                                    </div>
+                                    <div class="side right">
+                                        <div>20</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="media p-3">
+                                <img src="./images/Tan.jpg" alt="John Doe" class="mr-3 mt-3 rounded-circle"
+                                    style="width:60px;">
+                                <div class="media-body">
+                                    <h5>Thiện Nguyen</h5>
+                                    <div class="danhgia">
+                                        <div class="fa fa-star checked"></div>
+                                        <div class="fa fa-star checked"></div>
+                                        <div class="fa fa-star checked"></div>
+                                        <div class="fa fa-star checked"></div>
+                                        <div class="fa fa-star-half-alt checked"></div>
+                                        <p></p>
+                                    </div>
+                                    <p>Oki phết Chuối tây già bóc vỏ, thái mỏng, hấp chín. Bỏ chuối vào lọ thủy tinh, đổ
+                                        ngập nước đường
+                                        đun sôi để nguội, cho men rượu vào, đậy kín (cứ 1 kg chuối cho khoảng 300 kg
+                                        đường và 5
+                                        viên men). Sau 1 tháng, gạn lấy nước trong cho vào chai, đậy kín. Rượu chuối
+                                        uống thơm,
+                                        ngon, dễ tiêu.</p>
+                                    <div class="media p-3">
+                                        <img src="./images/Home/triet.jpg" alt="Jane Doe"
+                                            class="mr-3 mt-3 rounded-circle" style="width:60px; height: 60px;">
+                                        <div class="media-body">
+                                            <h5>Long Ngoc <small><i>Posted on May 20 2021</i></small></h5>
+                                            <p>Được lắm thằng em</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="media  p-3">
+                                <img src="./images/Tan.jpg" alt="John Doe" class="mr-3 mt-3 rounded-circle"
+                                    style="width:60px;">
+                                <div class="media-body">
+                                    <h5>Thiện Nguyen</h5>
+                                    <div class="danhgia">
+                                        <div class="fa fa-star checked"></div>
+                                        <div class="fa fa-star checked"></div>
+                                        <div class="fa fa-star checked"></div>
+                                        <div class="fa fa-star checked"></div>
+                                        <div class="fa fa-star-half-alt checked"></div>
+                                        <p></p>
+                                    </div>
+                                    <p>Oki phết Chuối tây già bóc vỏ, thái mỏng, hấp chín. Bỏ chuối vào lọ thủy tinh, đổ
+                                        ngập nước đường
+                                        đun sôi để nguội, cho men rượu vào, đậy kín (cứ 1 kg chuối cho khoảng 300 kg
+                                        đường và 5
+                                        viên men). Sau 1 tháng, gạn lấy nước trong cho vào chai, đậy kín. Rượu chuối
+                                        uống thơm,
+                                        ngon, dễ tiêu.</p>
+                                    <div class="media p-3">
+                                        <img src="./images/Home/triet.jpg" alt="Jane Doe"
+                                            class="mr-3 mt-3 rounded-circle" style="width:60px; height: 60px;">
+                                        <div class="media-body">
+                                            <h5>Long Ngoc <small><i>Posted on May 20 2021</i></small></h5>
+                                            <p>Được lắm thằng em</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="thembinhluan" style="margin-top: 30px;">
+                                <!-- The toolbar will be rendered in this container. -->
+                                <div id="toolbar-container"></div>
+
+                                <!-- This container will become the editable. -->
+                                <div id="editor" style="min-height: 150px; border: 1px solid;">
+                                    
+                                </div>
+                                <input type="submit" value="Đăng" class="btn btn-primary">
+                            </div>
+
+                            <script>
+                                DecoupledEditor
+                                    .create(document.querySelector('#editor'))
+                                    .then(editor => {
+                                        const toolbarContainer = document.querySelector('#toolbar-container');
+
+                                        toolbarContainer.appendChild(editor.ui.view.toolbar.element);
+                                    })
+                                    .catch(error => {
+                                        console.error(error);
+                                    });
+                            </script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END CONTENT -->
+        <div class="back_to_top">
+            <a href="#">
+                <span>
+                    <i class="fa fa-chevron-up" aria-hidden="true" style="font-size: 26px;width: 50px; color: #000; height: 38px;padding: 0px 14px;"></i>
+                </span>
+            </a>
+        </div>
+        <div class="chat_client">
+            <span>
+                <i class="fa fa-comment-alt" aria-hidden="true" style="font-size: 26px;width: 50px; color: #3e677ba6;; height: 38px;padding: 0px 12px;"></i>
+            </span>
+        </div>
+        <!-- GUI TIN -->
+        <div id="ykien">
+            <div class="contact" style="margin: 30px 0; ">
+                <div class="right_ykiens">
+                    <div class="container">
+                        <h2>Đăng ký nhận bản tin</h2>
+                        <p>Nhận bản tin từ Web AVG mọi ngày.</p>
+                        <div class="form-group">
+                            <label for="text">Tên của bạn:</label>
+                            <input type="text" class="form-control" placeholder="Họ và tên" id="name">
+                        </div>
+                        <div class="form-group">
+                            <label for="text">SĐT:</label>
+                            <input type="text" class="form-control" placeholder="Số Điện Thoại" id="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email address:</label>
+                            <input type="email" class="form-control" placeholder="Email" id="email">
+                        </div>
+                        <div class="form-group">
+                            <label for="comment">Comment:</label>
+                            <textarea class="form-control" rows="5" id="comment"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" class="btn btn-primary" value="GỬI">
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+        </div>
+        <!-- END GUI TINH -->
+        <!-- FOOTER -->
+        <div id="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-3 ">
+                        <h4>About Us</h4>
+                        <p>ASBiO luôn nỗ lực không ngừng trong việc nâng cao chất lượng dịch vụ, tìm kiếm và hợp tác với
+                            các
+                            đối tác uy tín để mang đến những sản phẩm tốt nhất, đáp ứng nhu cầu của quý khách hàng</p>
+                        <ul class="ti">
+                            <li><a href=""><i class="ti-facebook"></i></a></li>
+                            <li><a href=""><i class="ti-youtube"></i></a></li>
+                            <li><a href=""><i class="ti-instagram"></i></a></li>
+                            <li><a href=""><i class="ti-twitter"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-3 ">
+                        <h4 style="margin-left: 40px;">Menu</h4>
+                        <ul class="footer-menu">
+                            <li><a href="">Home</a></li>
+                            <li><a href="">Species</a></li>
+                            <li><a href="">Solutions</a></li>
+                            <li><a href="">About</a></li>
+                            <li><a href="">Product</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-3 ">
+                        <h4>Nhà Cung Cấp</h4>
+                        <ul class="nhacungcap">
+                            <li><a href="">Thăng Long</a></li>
+                            <li><a href="">Tigervet</a></li>
+                            <li><a href="">Vinavietco</a></li>
+                            <li><a href="">APA</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-3 ">
+                        <h4>Contact</h4>
+                        <h6>Addres:</h6>
+                        <p>470-Nam Kì Khởi Nghĩa - Hòa Quý - Ngũ Hành Sơn - ĐN</p>
+                        <h6>Phone:</h6>
+                        <p>0946.252.210</p>
+                        <h6>Email:</h6>
+                        <p>lvtan.20it1@gmail.vku.udn.vn</p>
+                    </div>
+                </div>
+                <div class="button-footer">
+                    <i style="color: beige;">Design by ASBiO</i>
+                </div>
+            </div>
+
+        </div>
+        <!-- <script src="./assets/js/.thucan.js"></script> -->
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script src="./assets/js/back_to_top.js"></script>
+        <script>
+            AOS.init({
+                // offset:200,
+                duration: 1000,
+            });
+        </script>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" crossorigin="anonymous">
+            </script>
+        <script>
+            $num = $('.my-card').length;
+            $even = $num / 2;
+            $odd = ($num + 1) / 2;
+
+            if ($num % 2 == 0) {
+                $('.my-card:nth-child(' + $even + ')').addClass('active');
+                $('.my-card:nth-child(' + $even + ')').prev().addClass('prev');
+                $('.my-card:nth-child(' + $even + ')').next().addClass('next');
+            } else {
+                $('.my-card:nth-child(' + $odd + ')').addClass('active');
+                $('.my-card:nth-child(' + $odd + ')').prev().addClass('prev');
+                $('.my-card:nth-child(' + $odd + ')').next().addClass('next');
+            }
+
+            $('.my-card').click(function () {
+                $slide = $('.active').width();
+                console.log($('.active').position().left);
+
+                if ($(this).hasClass('next')) {
+                    $('.card-carousel').stop(false, true).animate({ left: '-=' + $slide });
+                } else if ($(this).hasClass('prev')) {
+                    $('.card-carousel').stop(false, true).animate({ left: '+=' + $slide });
+                }
+
+                $(this).removeClass('prev next');
+                $(this).siblings().removeClass('prev active next');
+
+                $(this).addClass('active');
+                $(this).prev().addClass('prev');
+                $(this).next().addClass('next');
+            });
+
+
+            // Keyboard nav
+            $('html body').keydown(function (e) {
+                if (e.keyCode == 37) { // left
+                    $('.active').prev().trigger('click');
+                }
+                else if (e.keyCode == 39) { // right
+                    $('.active').next().trigger('click');
+                }
+            });
+            $(document).ready(function () {
+                $('.count').prop('disabled', true);
+                $(document).on('click', '.plus', function () {
+                    $('.count').val(parseInt($('.count').val()) + 1);
+                });
+                $(document).on('click', '.minus', function () {
+                    $('.count').val(parseInt($('.count').val()) - 1);
+                    if ($('.count').val() == 0) {
+                        $('.count').val(1);
+                    }
+                });
+            });
+        </script>
+
+
+</body>
+
+</html>

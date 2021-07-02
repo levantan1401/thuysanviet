@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/img/Home/Logo.jpg" type="image/x-icon">
+    <title>Tin Tức</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-5.15.3-web/css/all.min.css">
+    <link rel="stylesheet" href="./assets/fonts/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="./assets/css/css_blog.css">
+    <link rel="stylesheet" href="./assets/css/reponsive_homepage.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div id="main">
+        <div class="header__nho" data-aos="fade">
+            <div class="header__nho-Social-Network">
+                <ul class="Social-Network__ul">
+                    <li class="Social-Network__li">
+                        <i class="ti-facebook"></i>
+                    </li>
+                    <li class="Social-Network__li">
+                        <i class="ti-pinterest"></i>
+                    </li>
+                    <li class="Social-Network__li">
+                        <i class="ti-twitter"></i>
+                    </li>
+                    <li class="Social-Network__li">
+                        <i class="ti-skype"></i>
+                    </li>
+                    <li class="Social-Network__li">
+                        <i class="ti-instagram"></i>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="header__nho-item">
+                <ul class="header__nho-item-ul">
+                    <li class="header__nho_search">
+                        <div class="input-group-append">
+                            <input style="border-radius: 20px;border:none; outline: none; padding-left: 12px;"
+                                type="text" placeholder="Search">
+                            <button style="border-radius: 20px;" class="btn btn-info ti-search" type="submit"></button>
+                        </div>
+                    </li>
+                    <li class="header__nho-item-li header__nho-item-li-lag">
+                        <a href="#" class="link link1"><i class="header__nho-item_ke-doc"> VI</i></a>
+                    </li>
+                    <li class="header__nho-item-li header__nho-item-li-lag">
+                        <a href="#" class="link"><i> EN</i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li>
+                    <div class="logo">
+                        <img style="width: 30%; margin-left: 35%;" src="./images/Logo1.jpg" alt="logo">
+                    </div>
+                </li>
+                <li><a href="./index.html">Trang Chủ<i class="" aria-hidden="true"></i></a></li>
+                <li><a href="./tintuc.html">Tin Tức<i class="" aria-hidden="true"></i></a></li>
+                <li><a href="./giaiphap.html">Giải pháp<i class="" aria-hidden="true"></i></a></li>
+                <li><a href="./sanpham.html">Sản phẩm</a></li>
+                <li><a href="./AboutUs.html">Giới thiệu <i class="" aria-hidden="true"></i></a></li>
+            </ul>
+            <ul class="nav-right">
+                <li><a href="./DangNhap.html"><i class="fa fa-user dangnhap" aria-hidden="true"
+                            style="font-size: 16px;"></i></a>
+                </li>
+                <li> <a href=""><i class="fa fa-shopping-cart dangnhap" aria-hidden="true" style="font-size: 16px;"></i>
+                    </a>
+
+                </li>
+                <li><a href="">
+                        <i class="fa fa-bars thanhmenu" aria-hidden="true" style="font-size: 16px;"></i></a></li>
+            </ul>
+            <div class="mobile_nav">
+                <div class="user">
+                    <span><a href="./DangNhap.html"><i class="fa fa-user-circle"
+                                style="font-size: 16px;"></i></a></span>
+                </div>
+                <div class="thanh_menu">
+                    <span onclick="OpenNav()"><i class="fa fa-bars" style="font-size: 16px; color: #000;"></i></span>
+                </div>
+                <div class="logo_mobile">
+                    <div class="logo_main text-center">
+                        <img style="width: 30%; margin-left: 35%;" src="./images/Logo1.jpg" alt="logo">
+                    </div>
+                </div>
+                <div id="slide_nav_moblie" class="sidenav">
+                    <p class="closebtn" onclick="CloseNav()">&times;</p>
+                    <a href="./index.html">Trang Chủ<i class="" aria-hidden="true"></i></a>
+                    <a href="./tintuc.html">Tin Tức<i class="" aria-hidden="true"></i></a>
+                    <a href="./giaiphap.html">Giải pháp<i class="" aria-hidden="true"></i></a>
+                    <a href="./sanpham.html">Sản phẩm</a></li>
+                    <a href="./AboutUs.html">Giới thiệu <i class="" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </nav>
+
+
+
+        <!-- kết thức phần nav -->
+
+        <!-- chỉ hiện ở tablet và pc -->
+        <!-- <div id="mySidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            <a href="./dang-ki-bwd-tieng-anh.html">sign Up</a>
+            <a href="./dang-nhap-tieng-anh copy.html">Sign In</a>
+            <a href="#">Setting</a>
+        </div> -->
+
+
+        <!-- tạo phần blog nền -->
+        <div class="content__blog-nen" style="font-family: 'Times New Roman', Times, serif;">
+            <div class="grid">
+                <div class="row dung__cho-moblie" data-aos="fade-right" style="margin-top: 8px;">
+                    <div class="col-sm-8 phong_to-moblie khoang_cach_anh-moblie anh_nen_bu" data-aos="fade-right"
+                        style="position: relative;" onclick="window.location.href='/blog_1(boy-trun).html'">
+                        <img src="./assets/img/Home/hotom_shrimp_pond.jpg" alt="" style="width: 100%; ;">
+                        <div class="blog__nen-modal">
+                            <div class="blog__nen-text">
+                                <h3>Cách canh tác và nuôi trồng thủy sản từ Hai bàn tay trắng</h3>
+                                <!-- <p>Mr. Tran Duy Linh from Cau Ke district, Tra Vinh province has processed fresh wax coconut into a variety of high-end products.</p> -->
+                                <button>Đọc >></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4 phong_to-moblie row__anh-2-ben">
+                        <div class="row col1 anh_nen_bu khoang_cach_anh-moblie " data-aos="fade-down"
+                            style="position: relative;" data-aos="fade-right" style="position: relative;"
+                            onclick="window.location.href='/blog_2(Vietnamese-durian).html'">
+                            <img src="./assets/img/Home/nuôi-trồng-thủy-sản-scaled.jpg" alt="" style="width: 100%; ">
+                            <div class="blog__nen-modal">
+                                <div class="blog__nen-text">
+                                    <h5>Vượt khó khăn về thời thiết. Làm Giàu từ quê hương</h3>
+                                        <!-- <p>Mr. Tran Duy Linh from Cau Ke district, Tra Vinh province has processed fresh wax coconut into a variety of high-end products.</p> -->
+                                        <button>Đọc >></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row col2 anh_nen_bu  khoang_cach_anh-moblie" data-aos="fade-up"
+                            style="position: relative;">
+                            <img src="./assets/img/Home/cho_ca_an.jpg" alt="" style="width: 100%; ">
+                            <div class="blog__nen-modal">
+                                <div class="blog__nen-text">
+                                    <h5>Vượt khó khăn về thời thiết. Làm Giàu từ quê hương</h5>
+                                    <!-- <p>Mr. Tran Duy Linh from Cau Ke district, Tra Vinh province has processed fresh wax coconut into a variety of high-end products.</p> -->
+                                    <button>Đọc >></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- kết thúc phần blog nền -->
+
+
+        <!-- tạo phaann body -->
+        <div id="conent__blog-body" style="margin-top: 50px;">
+            <div class="grid">
+                <div class="row set__cot__tablet-moblie">
+                    <div class="col-sm-3 dung__cho-pc">
+                        <!-- tạo khung seach -->
+                        <div class="row" data-aos="fade">
+                            <div class="row__box">
+                                <header>Tìm kiếm</header>
+
+                                <div class="boddy__search">
+                                    <input type="text" placeholder="Enter article"><button><i
+                                            class="ti-search"></i></button>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- kêt thúc search -->
+
+                        <!-- tạo khung theo dõi -->
+                        <div class="row khoan_cach" data-aos="fade">
+                            <div class="row__box">
+                                <header>Theo dõi chúng tôi</header>
+                                <div class="body__theodoi">
+                                    <div class="row" style="justify-content: center;">
+                                        <div class="box__tron-item">
+                                            <i class="ti-facebook"></i>
+                                        </div>
+
+                                        <div class="box__tron-item">
+                                            <i class="ti-instagram"></i>
+                                        </div>
+
+                                        <div class="box__tron-item">
+                                            <i class="ti-twitter"></i>
+                                        </div>
+
+                                        <div class="box__tron-item">
+                                            <i class="ti-pinterest-alt"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- kêt thúc  theo dõi -->
+
+                        <!-- tạo phần cho chuyện nhà nông -->
+
+                        <div class="row khoan_cach" data-aos="fade">
+                            <div class="row__box">
+                                <header>Tin nổi bật</header>
+                                <div class="boddy__chuyen-nha-nong">
+
+                                    <a href="https://langmoi.vn/lao-nong-xu-lang-lam-giau-tu-trai-ngot/?fbclid=IwAR0wBiG-H1gpLojMMKOLnnx_IOQjkNyOinx9KldXitZOod4EK96oyHkuGAo"
+                                        style="text-decoration: none;">
+                                        <div class="boddy__chuyen-nha-nong__bai-bao row">
+
+                                            <div class="col-sm-5  phan_img">
+                                                <img src="./assets/img/Home/title.jpg" alt="">
+                                            </div>
+                                            <div class="col-sm-7 phan_text">
+                                                <p>10.5.2021</p>
+                                                <h6>Công cuộc đổi mới...</h6>
+                                                <p>Trong 1 gia đình nhỏ có 2 người con trai ai i ai...</p>
+                                            </div>
+                                        </div>
+                                    </a>
+
+                                    <a href="https://chuyennhanong.vn/threads/thu-nhap-cao-nho-cach-lam-khac-nguoi.2694/?fbclid=IwAR3qtgKzCyLQDHYgFtvSU8kLNbV7gPEvYWOr31NlNgOC7VoQSQvP1Q85pHk"
+                                        style="text-decoration: none;">
+                                        <div class="boddy__chuyen-nha-nong__bai-bao row khoan_cach-bao">
+
+                                            <div class="col-sm-5  phan_img">
+                                                <img src="./assets/img/Home/hotom_shrimp_pond.jpg" alt="">
+                                            </div>
+                                            <div class="col-sm-7 phan_text">
+                                                <p>15.5.2021</p>
+                                                <h6>Đi lên từ 2 bàn tay trắng...</h6>
+                                                <p>Trong 1 gia đình nhỏ ...</p>
+                                            </div>
+                                        </div>
+                                    </a>
+
+                                    <a href="https://chuyennhanong.vn/threads/nuoi-giun-va-vi-sinh-vat-co-loi-lam-dat-cho-buoi-nguoi-dan-thang-lon.2535/?fbclid=IwAR08GQ3X6Z2ptt7F5jCv_42DB08oSsUsNSKu87YJHioRToY1qomWmcxpjZ8"
+                                        style="text-decoration: none;">
+                                        <div class="boddy__chuyen-nha-nong__bai-bao row khoan_cach-bao">
+
+                                            <div class="col-sm-5  phan_img">
+                                                <img src="./assets/img/tintuc/nuoitom.png" alt="">
+                                            </div>
+                                            <div class="col-sm-7 phan_text">
+                                                <p>21.10.2021</p>
+                                                <h6>hihihihihihi...</h6>
+                                                <p>Anh Long la tỷ phú...</p>
+                                            </div>
+                                        </div>
+                                    </a>
+
+                                    <a href="https://danviet.vn/hau-giang-nong-dan-choi-lon-mang-cong-nghe-israel-ve-trong-ra-thu-dua-ngot-lim-ban-dat-hang-2021051713480129.htm"
+                                        style="text-decoration: none;">
+                                        <div class="boddy__chuyen-nha-nong__bai-bao row khoan_cach-bao">
+
+                                            <div class="col-sm-5  phan_img">
+                                                <img src="./assets/img/tintuc/aoho.jpg " alt="">
+                                            </div>
+                                            <div class="col-sm-7 phan_text">
+                                                <p>14.7.2021</p>
+                                                <h6>Anh zai 2002 học IT...</h6>
+                                                <p>Về quê nuôi cá thành tỷ phú...</p>
+                                            </div>
+                                        </div>
+                                    </a>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- kết thúc cho chuyện nhà nông -->
+
+                        <!-- tạo phần hình ảnh -->
+
+                        <div class="row khoan_cach" data-aos="fade">
+                            <div class="row__box">
+                                <header>Sản phẩm chất lượng cao</header>
+                                <div class="body__anh">
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <img src="./assets/img/SanPham/ca1.png" alt="">
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <img src="./assets/img/SanPham/ca2.png" alt="">
+                                        </div>
+
+                                    </div>
+
+                                    <div class="row khoan_cach-image">
+                                        <div class="col-sm-6">
+                                            <img src="./assets/img/SanPham/ca3.png" alt="">
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <img src="./assets/img/SanPham/ca4.jpg" alt="">
+                                        </div>
+                                    </div>
+
+                                    <div class="row khoan_cach-image">
+                                        <div class="col-sm-6">
+                                            <img src="./assets/img/SanPham/tom2.jpg" alt="">
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <img src="./assets/img/SanPham/tom4.jpg" alt="">
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- kết thúc phần hình ảnh -->
+
+                        <!-- tạo phần thể loại -->
+
+                        <div class="row khoan_cach" data-aos="fade">
+                            <div class="row__box">
+                                <header>Chủ đề nổi bật</header>
+
+                                <div class="body_theloai">
+
+                                    <a href="#" style="text-decoration: none;">
+                                        <div class="phan__text">
+                                            <div class="text-title">
+                                                <p>Câu chuyện đi lên</p>
+                                            </div>
+
+                                            <div class="text-soluong">
+                                                <p>(4)</p>
+                                            </div>
+                                        </div>
+                                    </a>
+
+                                    <a href="#" style="text-decoration: none;">
+                                        <div class="phan__text khoang-cach-theloai">
+                                            <div class="text-title">
+                                                <p>Câu chuyện đi lên</p>
+                                            </div>
+
+                                            <div class="text-soluong">
+                                                <p>(4)</p>
+                                            </div>
+                                        </div>
+                                    </a>
+
+                                    <a href="#" style="text-decoration: none;">
+                                        <div class="phan__text khoang-cach-theloai">
+                                            <div class="text-title">
+                                                <p>Câu chuyện đi lên</p>
+                                            </div>
+
+                                            <div class="text-soluong">
+                                                <p>(4)</p>
+                                            </div>
+                                        </div>
+                                    </a>
+
+                                    <a href="#" style="text-decoration: none;">
+                                        <div class="phan__text khoang-cach-theloai">
+                                            <div class="text-title">
+                                                <p>Câu chuyện đi lên</p>
+                                            </div>
+
+                                            <div class="text-soluong">
+                                                <p>(4)</p>
+                                            </div>
+                                        </div>
+                                    </a>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- kết thúc thể loại -->
+                    </div>
+                    <div class="col-sm-9" style="padding-right: 30px; padding-left: 30px;">
+
+                        <div class="bai__bao_nen">
+                            <div class="title" data-aos="fade-up">
+                                <h2>Kĩ thuật chăm sóc tôm</h2>
+                                <p>MAY 15, 2021</p>
+                            </div>
+
+                            <div class="anh_bao" data-aos="fade">
+                                <img src="./assets/img/Home/cho_ca_an.jpg" alt="" style="width: 100%; height: 100%;">
+                            </div>
+
+                            <div data-aos="fade-up">
+                                <div class="text">
+                                    <p style="font-size: 18px; font-weight: 600;">Tôm sú và cách nuôi trồng & trị bệnh</p>
+                                    <p>
+                                        (TSVN) – Nuôi tôm an toàn sinh học đang được nhiều địa phương trên cả nước áp
+                                        dụng,
+                                        đem lại hiệu quả cao trong việc kiểm soát mầm bệnh.Đây là hướng đi bền vững mà
+                                        ngành
+                                        nuôi tôm công nghiệp Việt Nam đang hướng tới.
+                                        (TSVN) – Nuôi tôm an toàn sinh học đang được nhiều địa phương trên cả nước áp
+                                        dụng,
+                                        đem lại hiệu quả cao trong việc kiểm soát mầm bệnh.Đây là hướng đi bền vững mà
+                                        ngành
+                                        nuôi tôm công nghiệp Việt Nam đang hướng tới.
+                                    </p>
+
+                                    <p>
+                                        (TSVN) – Nuôi tôm an toàn sinh học đang được nhiều địa phương trên cả nước áp
+                                        dụng,
+                                        đem lại hiệu quả cao trong việc kiểm soát mầm bệnh.Đây là hướng đi bền vững mà
+                                        ngành
+                                        nuôi tôm công nghiệp Việt Nam đang hướng tới.
+                                        (TSVN) – Nuôi tôm an toàn sinh học đang được nhiều địa phương trên cả nước áp
+                                        dụng,
+                                        đem lại hiệu quả cao trong việc kiểm soát mầm bệnh.Đây là hướng đi bền vững mà
+                                        ngành
+                                        nuôi tôm công nghiệp Việt Nam đang hướng tới.
+                                    </p>
+
+                                </div>
+
+                                <div class="nut__doc">
+                                    <button>Xem ngay</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <hr style="margin: 30px 0;">
+
+                        <div class="bai-bao-doc-them">
+
+                            <a href="#" style="text-decoration: none;">
+                                <div class="row" data-aos="fade-left">
+                                    <div class="col-sm-5">
+                                        <img src="./assets/img/Home/hotom_shrimp_pond.jpg" alt=""
+                                            style="width: 100%; height: 100%;">
+                                    </div>
+                                    <div class="col-sm-7">
+                                        <div class="text">
+                                            <p>Jun 15, 2021</p>
+                                            <h4>Cuộc sống và chăm sóc tôm tại hồ</h4>
+                                            <p>(TSVN) – Nuôi tôm an toàn sinh học đang được nhiều địa phương trên cả nước áp
+                                                dụng,
+                                                đem lại hiệu quả cao trong việc kiểm soát mầm bệnh.Đây là hướng đi bền vững mà
+                                                ngành
+                                                nuôi tôm công nghiệp Việt Nam đang hướng tới....</p>
+                                        </div>
+
+                                        <div class="btn-reading">
+                                            <button>Xem ngay</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <div class="ke-ngang">
+                                <hr>
+                            </div>
+
+                            <a href="#" style="text-decoration: none;">
+                                <div class="row" data-aos="fade-right">
+
+                                    <div class="col-sm-7">
+                                        <div class="text">
+                                            <p>Sep 20, 2021</p>
+                                            <h4>Đi lên từ 2 bàn tay trắng và phát triển sự nghiệp</h4>
+                                            <p>
+                                                (TSVN) – Nuôi tôm an toàn sinh học đang được nhiều địa phương trên cả nước áp
+                                        dụng,
+                                        đem lại hiệu quả cao trong việc kiểm soát mầm bệnh.Đây là hướng đi bền vững mà
+                                        ngành
+                                        nuôi tôm công nghiệp Việt Nam đang hướng tới.
+                                        (TSVN) – Nuôi tôm an toàn sinh học đang được nhiều địa phương trên cả nước áp
+                                        dụng,
+                                        đem lại hiệu quả cao trong việc kiểm soát mầm bệnh.Đây là hướng đi bền vững mà
+                                        ngành
+                                        nuôi tôm công nghiệp Việt Nam đang hướng tới.
+                                            </p>
+                                        </div>
+
+                                        <div class="btn-reading">
+                                            <button>Đọc ngay</button>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-5">
+                                        <img src="./assets/img/Home/nuôi-trồng-thủy-sản-scaled.jpg" alt=""
+                                            style="width: 100%; height: 100%;">
+                                    </div>
+                                </div>
+                            </a>
+
+                            <div class="ke-ngang" data-aos="fade-right">
+                                <hr>
+                            </div>
+
+                            <a href="#" style="text-decoration: none;">
+                                <div class="row" data-aos="fade-left">
+                                    <div class="col-sm-5">
+                                        <img src="./assets/img/Home/title4.jpg" alt=""
+                                            style="width: 100%; height: 100%;">
+                                    </div>
+                                    <div class="col-sm-7">
+                                        <div class="text">
+                                            <p>Jun 15, 2021</p>
+                                            <h4>Long và Ngọc là đôi bạn thân </h4>
+                                            <p>
+                                                (TSVN) – Nuôi tôm an toàn sinh học đang được nhiều địa phương trên cả nước áp
+                                                dụng,
+                                                đem lại hiệu quả cao trong việc kiểm soát mầm bệnh.Đây là hướng đi bền vững mà
+                                                ngành
+                                                nuôi tôm công nghiệp Việt Nam đang hướng tới.
+                                                (TSVN) – Nuôi tôm an toàn sinh học đang được nhiều địa phương trên cả nước áp
+                                        dụng,
+                                        đem lại hiệu quả cao trong việc kiểm soát mầm bệnh.Đây là hướng đi bền vững mà
+                                        ngành
+                                        nuôi tôm công nghiệp Việt Nam đang hướng tới.
+                                            </p>
+                                        </div>
+
+                                        <div class="btn-reading">
+                                            <button>Đọc ngay</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- dùng cho giao dienj tablet và moblie -->
+                    <!-- <div class="dung__cho-repon"> -->
+                    <div class="col-sm-3  dung__cho-repon" style="margin-top: 50px;">
+                        <!-- tạo khung seach -->
+                        <div class="row" data-aos="fade">
+                            <div class="row__box">
+                                <header>SEARCH</header>
+
+                                <div class="boddy__search">
+                                    <input type="text" placeholder="Enter article"><button><i
+                                            class="ti-search"></i></button>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- kêt thúc search -->
+
+                        <!-- tạo khung theo dõi -->
+                        <div class="row khoan_cach" data-aos="fade">
+                            <div class="row__box">
+                                <header>FOLLOW US</header>
+                                <div class="body__theodoi">
+                                    <div class="row" style="justify-content: center;">
+                                        <div class="box__tron-item">
+                                            <i class="ti-facebook"></i>
+                                        </div>
+
+                                        <div class="box__tron-item">
+                                            <i class="ti-instagram"></i>
+                                        </div>
+
+                                        <div class="box__tron-item">
+                                            <i class="ti-twitter"></i>
+                                        </div>
+
+                                        <div class="box__tron-item">
+                                            <i class="ti-pinterest-alt"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- kêt thúc  theo dõi -->
+
+                        <!-- tạo phần cho chuyện nhà nông -->
+
+                        <div class="row khoan_cach" data-aos="fade">
+                            <div class="row__box">
+                                <header>FARMER'S STORY</header>
+                                <div class="boddy__chuyen-nha-nong">
+
+                                    <a href="https://langmoi.vn/lao-nong-xu-lang-lam-giau-tu-trai-ngot/?fbclid=IwAR0wBiG-H1gpLojMMKOLnnx_IOQjkNyOinx9KldXitZOod4EK96oyHkuGAo"
+                                        style="text-decoration: none;">
+                                        <div class="boddy__chuyen-nha-nong__bai-bao row">
+
+                                            <div class="col-sm-5  phan_img">
+                                                <img src="./assets/img/lao_nong_xu_lang.jpg" alt="">
+                                            </div>
+                                            <div class="col-sm-7 phan_text">
+                                                <p>10.5.2021</p>
+                                                <h6>Lang's farmer gets rich from sweet fruit</h6>
+                                                <p>On an area of ​​nearly 2 hectares of garden land of Mr. Hoang Ky
+                                                    Cuoc's family in Ao Dau village, Son Ha commune (Huu Lung district,
+                                                    Lang Son province)....</p>
+                                            </div>
+                                        </div>
+                                    </a>
+
+                                    <a href="https://chuyennhanong.vn/threads/thu-nhap-cao-nho-cach-lam-khac-nguoi.2694/?fbclid=IwAR3qtgKzCyLQDHYgFtvSU8kLNbV7gPEvYWOr31NlNgOC7VoQSQvP1Q85pHk"
+                                        style="text-decoration: none;">
+                                        <div class="boddy__chuyen-nha-nong__bai-bao row khoan_cach-bao">
+
+                                            <div class="col-sm-5  phan_img">
+                                                <img src="./assets/img/cach_lam-khac-nguoi.jpg" alt="">
+                                            </div>
+                                            <div class="col-sm-7 phan_text">
+                                                <p>15.5.2021</p>
+                                                <h6>High income thanks to a different way of doing things</h6>
+                                                <p>With the mindset "I have to grow differently from other people"
+                                                    to make a profit, with more than 2 hectares, he specializes in
+                                                    growing custard apple off-season....</p>
+                                            </div>
+                                        </div>
+                                    </a>
+
+                                    <a href="https://chuyennhanong.vn/threads/nuoi-giun-va-vi-sinh-vat-co-loi-lam-dat-cho-buoi-nguoi-dan-thang-lon.2535/?fbclid=IwAR08GQ3X6Z2ptt7F5jCv_42DB08oSsUsNSKu87YJHioRToY1qomWmcxpjZ8"
+                                        style="text-decoration: none;">
+                                        <div class="boddy__chuyen-nha-nong__bai-bao row khoan_cach-bao">
+
+                                            <div class="col-sm-5  phan_img">
+                                                <img src="./assets/img/nuoi-giun-giup-buoi.jpg" alt="">
+                                            </div>
+                                            <div class="col-sm-7 phan_text">
+                                                <p>21.10.2021</p>
+                                                <h6>Raising worms and beneficial microorganisms to make land for
+                                                    pomelos, people "win" big</h6>
+                                                <p>Mr. Nguyen Van Oanh in Dong Buoi area, Nam Phuong Tien commune...</p>
+                                            </div>
+                                        </div>
+                                    </a>
+
+                                    <a href="https://danviet.vn/hau-giang-nong-dan-choi-lon-mang-cong-nghe-israel-ve-trong-ra-thu-dua-ngot-lim-ban-dat-hang-2021051713480129.htm"
+                                        style="text-decoration: none;">
+                                        <div class="boddy__chuyen-nha-nong__bai-bao row khoan_cach-bao">
+
+                                            <div class="col-sm-5  phan_img">
+                                                <img src="./assets/img/anh-trai-hau-giang.jpg " alt="">
+                                            </div>
+                                            <div class="col-sm-7 phan_text">
+                                                <p>14.7.2021</p>
+                                                <h6>Hau Giang: Big changes in the fields</h6>
+                                                <p>Thanks to the support policy of the agricultural sector, farmers in
+                                                    Phung Hiep district (Hau Giang) gradually innovated their thinking
+                                                    in production,...</p>
+                                            </div>
+                                        </div>
+                                    </a>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- kết thúc cho chuyện nhà nông -->
+
+                        <!-- tạo phần hình ảnh -->
+
+                        <div class="row khoan_cach" data-aos="fade">
+                            <div class="row__box">
+                                <header>IMAGES</header>
+                                <div class="body__anh">
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <img src="./assets/img/anh_blabla.jpg" alt="">
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <img src="./assets/img/anh-chị-dep-bung-ban.jpg" alt="">
+                                        </div>
+
+                                    </div>
+
+                                    <div class="row khoan_cach-image">
+                                        <div class="col-sm-6">
+                                            <img src="./assets/img/anh-trai-cay-blabla2.jpg" alt="">
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <img src="./assets/img/anh-trai-cay-blabla.jpg" alt="">
+                                        </div>
+                                    </div>
+
+                                    <div class="row khoan_cach-image">
+                                        <div class="col-sm-6">
+                                            <img src="./assets/img/anh-trai-cay-blabla3.jpg" alt="">
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <img src="./assets/img/anh-trai-cay-blabla4.jpg" alt="">
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- kết thúc phần hình ảnh -->
+
+                        <!-- tạo phần thể loại -->
+
+                        <div class="row khoan_cach" data-aos="fade">
+                            <div class="row__box">
+                                <header>CATEGORIES</header>
+
+                                <div class="body_theloai">
+
+                                    <a href="#" style="text-decoration: none;">
+                                        <div class="phan__text">
+                                            <div class="text-title">
+                                                <p>Farmer's story</p>
+                                            </div>
+
+                                            <div class="text-soluong">
+                                                <p>(4)</p>
+                                            </div>
+                                        </div>
+                                    </a>
+
+                                    <a href="#" style="text-decoration: none;">
+                                        <div class="phan__text khoang-cach-theloai">
+                                            <div class="text-title">
+                                                <p>Startup story</p>
+                                            </div>
+
+                                            <div class="text-soluong">
+                                                <p>(4)</p>
+                                            </div>
+                                        </div>
+                                    </a>
+
+                                    <a href="#" style="text-decoration: none;">
+                                        <div class="phan__text khoang-cach-theloai">
+                                            <div class="text-title">
+                                                <p>Beauty with fruit</p>
+                                            </div>
+
+                                            <div class="text-soluong">
+                                                <p>(4)</p>
+                                            </div>
+                                        </div>
+                                    </a>
+
+                                    <a href="#" style="text-decoration: none;">
+                                        <div class="phan__text khoang-cach-theloai">
+                                            <div class="text-title">
+                                                <p>Garden tourism</p>
+                                            </div>
+
+                                            <div class="text-soluong">
+                                                <p>(4)</p>
+                                            </div>
+                                        </div>
+                                    </a>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- kết thúc thể loại -->
+                    </div>
+                    <!-- </div> -->
+                </div>
+            </div>
+        </div>
+        <!-- kêt thúc phần body -->
+        <!-- Y KIEN  -->
+        <div class="back_to_top">
+            <a href="#">
+                <span>
+                    <i class="fa fa-chevron-up" aria-hidden="true" style="font-size: 26px;width: 50px; color: #000; height: 38px;padding: 0px 14px;"></i>
+                </span>
+            </a>
+        </div>
+        <div class="chat_client">
+            <span>
+                <i class="fa fa-comment-alt" aria-hidden="true" style="font-size: 26px;width: 50px; color: #3e677ba6;; height: 38px;padding: 0px 12px;"></i>
+            </span>
+        </div>
+        <div id="ykien">
+            <div class="contact">
+                <div class="right">
+                    <div class="container">
+                        <h2>Đăng ký nhận bản tin</h2>
+                        <p>Nhận bản tin từ Web AVG mọi ngày.</p>
+                        <div class="form-group">
+                            <label for="text">Tên của bạn:</label>
+                            <input type="text" class="form-control" placeholder="Họ và tên" id="name">
+                        </div>
+                        <div class="form-group">
+                            <label for="text">SĐT:</label>
+                            <input type="text" class="form-control" placeholder="Số Điện Thoại" id="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email address:</label>
+                            <input type="email" class="form-control" placeholder="Email" id="email">
+                        </div>
+                        <div class="form-group">
+                            <label for="comment">Comment:</label>
+                            <textarea class="form-control" rows="5" id="comment"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" class="btn btn-primary" value="GỬI">
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- bắt đầu thẻ footer -->
+        <div id="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-3 ">
+                        <h4>About Us</h4>
+                        <p>ASBiO luôn nỗ lực không ngừng trong việc nâng cao chất lượng dịch vụ, tìm kiếm và hợp tác với
+                            các
+                            đối tác uy tín để mang đến những sản phẩm tốt nhất, đáp ứng nhu cầu của quý khách hàng</p>
+                        <ul class="ti">
+                            <li><a href=""><i class="ti-facebook"></i></a></li>
+                            <li><a href=""><i class="ti-youtube"></i></a></li>
+                            <li><a href=""><i class="ti-instagram"></i></a></li>
+                            <li><a href=""><i class="ti-twitter"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-3 ">
+                        <h4 style="margin-left: 40px;">Menu</h4>
+                        <ul class="footer-menu">
+                            <li><a href="">Home</a></li>
+                            <li><a href="">Species</a></li>
+                            <li><a href="">Solutions</a></li>
+                            <li><a href="">About</a></li>
+                            <li><a href="">Product</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-3 ">
+                        <h4>Nhà Cung Cấp</h4>
+                        <ul class="nhacungcap">
+                            <li><a href="">Thăng Long</a></li>
+                            <li><a href="">Tigervet</a></li>
+                            <li><a href="">Vinavietco</a></li>
+                            <li><a href="">APA</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-3 ">
+                        <h4>Contact</h4>
+                        <h6>Addres:</h6>
+                        <p>470-Nam Kì Khởi Nghĩa - Hòa Quý - Ngũ Hành Sơn - ĐN</p>
+                        <h6>Phone:</h6>
+                        <p>0946.252.210</p>
+                        <h6>Email:</h6>
+                        <p>lvtan.20it1@gmail.vku.udn.vn</p>
+                    </div>
+                </div>
+                <div class="button-footer">
+                    <i style="color: beige;">Design by ASBiO</i>
+                </div>
+            </div>
+            <!-- kết thúc thẻ footer -->
+
+        </div>
+    </div>
+
+    <script src="./assets/js/back_to_top.js">
+
+    </script>
+    <script src="./assets/js/js-home-page.js"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 200,
+            duration: 1000,
+        });
+    </script>
+</body>
+
+</html>

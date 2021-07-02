@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/img/Home/Logo.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/admin.css">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css"
+        integrity="sha384-wESLQ85D6gbsF459vf1CiZ2+rr+CsxRY0RpiF1tLlQpDnAgg6rwdsUF1+Ics2bni" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="../BWS-WinnerTeam/assets/icon/fontawesome-free-5.15.3-web/css/fontawesome.min.css"> -->
+    <title>Đăng Bài Viết </title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <scrip src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></scrip>
+
+    <!-- Latest compiled JavaScript -->
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-5.15.3-web/css/all.min.css">
+    <link rel="stylesheet" href="./assets/fonts/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="./assets/css/khachhang.css">
+    <link rel="stylesheet" href="./assets/css/post.css">
+    <!-- REPONSIVE -->
+    <script src="https://cdn.ckeditor.com/ckeditor5/28.0.0/classic/ckeditor.js"></script>
+    
+</head>
+
+<body>
+    <div id="main">
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a href="./admin.html">
+                        <span class="icon"><i class="fa fa-home " aria-hidden="true"></i></span>
+                        <span class="title" style="padding: 8px;">
+                            <h2>Trang Chủ</h2>
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./admin.html">
+                        <span class="icon"><i class="fa fa-tachometer-alt" aria-hidden="true"></i></span>
+                        <span class="title">Bảng Điều Khiển</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="thongke.html">
+                        <span class="icon"><i class="fa fa-chart-bar" aria-hidden="true"></i></span>
+                        <span class="title">Thống Kê</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="./message.html">
+                        <span class="icon"><i class="fa fa-comment-dots" aria-hidden="true"></i></span>
+                        <span class="title">Tin Nhắn</span>
+                    </a>
+                </li>
+                <li style="background-color: rgb(70, 88, 255);">
+                    <a href="./post.html">
+                        <span class="icon"><i class="fa fa-upload" aria-hidden="true"></i></span>
+                        <span class="title">Bài Đăng</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./caidat.html">
+                        <span class="icon"><i class="fa fa-cog" aria-hidden="true"></i></span>
+                        <span class="title">Cài Đặt</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./index.html">
+                        <span class="icon"><i class="fa fa-sign-out-alt" aria-hidden="true"></i></span>
+                        <span class="title">Thoát</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="box">
+            <div class="topbar">
+                <div class="toggle" onclick="toggleMenu();"><i class="fa fa-bars"></i></div>
+                <div class="search">
+                    <label for="">
+                        <input type="text" placeholder="Tìm Kiếm">
+                        <i class="fa fa-search"></i>
+                    </label>
+                </div>
+                <div class="user">
+                    <img src="./images/10-12-2020.jpg" alt="">
+                </div>
+
+            </div>
+            <h4>Tạo Bài Viết</h4>
+           <div class="main">
+               <div class="post">
+                   <input type="text" name="" id="" class="w-100 mb-4 h4" value="Chủ Đề">
+                   <form action="/action_page.php">
+                    <input type="file" id="myFile" name="filename" class="mb-3">
+                  </form>
+                   <div id="editor">
+                       <p></p>
+                   </div>
+                   <button type="submit" class="btn btn-primary w-100" style="height: 70px;margin-top: 16px;">Đăng Bài</button>
+   
+               </div>
+               <div class="public">
+                   <div class="chedo">
+                       <h5>Chế Độ</h5>
+                       <hr>
+                       <input type="submit" value="Xem trước" class="ml-4">
+                       <input type="submit" value="Lưu "class="float-right mr-4">
+                       <p>Status: <b>Darft</b><a href="">Edit</a></p>
+                       <p>Vistadia: <b>Public</b><a href="">Edit</a></p>
+                       <p>publish: <b>fjskhf</b><a href="">Edit</a></p>
+                       
+                   </div>
+                   <div class="pageattibuite">
+                    <h5>Chỉnh Sửa</h5>
+                    <hr>
+                    <input type="submit" value="Xem Trước" class="ml-4">
+                    <input type="submit" value="Lưu "class="float-right mr-4">
+                    <p>Status: <b>Darft</b><a href="">Edit</a></p>
+                    <p>Vistadia: <b>Public</b><a href="">Edit</a></p>
+                    <p>publish: <b>fjskhf</b><a href="">Edit</a></p>
+                    
+                </div>
+               </div>
+              
+           </div>
+
+        </div>
+    </div>
+    <script>
+        function toggleMenu() {
+            let toggle = document.querySelector('.toggle');
+            let navigation = document.querySelector('.navigation')
+            let box = document.querySelector('.box')
+            toggle.classList.toggle('active');
+            navigation.classList.toggle('active');
+            box.classList.toggle('active');
+        }
+        (function ($) {
+            "use strict";
+
+            // Counter Number
+            $('.count').each(function () {
+                $(this).prop('Counter', 0).animate({
+                    Counter: $(this).text()
+                }, {
+                    duration: 2000,
+                    easing: 'swing',
+                    step: function (now) {
+                        $(this).text(Math.ceil(now));
+                    }
+                });
+            });
+        })(jQuery);
+
+        ClassicEditor
+        .create( document.querySelector( '#editor' ) )
+        .catch( error => {
+            console.error( error );
+        } );
+    </script>
+
+</body>
+
+</html>

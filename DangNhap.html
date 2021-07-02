@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/Acount.css">
+    <link rel="stylesheet" href="./assets/fonts/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="./assets/Bootstrap/function/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <title>Đăng Nhập</title>
+</head>
+
+<body>
+    <div id="main">
+        <div class="container">
+            <div class="truchinh">
+                <div class="right" >
+                    <img style="width: 400px;" src="../DoAnCoSo1/images/Home/shrimp.png" alt="">
+                </div>
+                <div class="form-group text-center" style="box-shadow: -178px 249px 89px #ddd;">
+                    <h2 class="text-center ">ĐĂNG NHẬP</h2>
+                    <!-- <form > -->
+                        <input id="email" class="form-control" type="email" name="email" placeholder="Email">
+                        <p id="error"></p>
+                        <input id="pass" class="form-control" type="password" name="pwd" placeholder="PassWord">
+                        <p id="error"></p>
+                        <i>
+                            <a href="./ResetPass.html">Quên Mật Khẩu</a>
+                        </i>
+                        <div class="btn-group-vertical w-100">
+                            <input type="submit" class="btn btn-primary ml-2 " value="Đăng Nhập" onclick="loginRun()" style="border-radius: 10px;"></input>
+                            <div class="btn_class">
+                                <button style="width: 50px;height: 50px;border-radius: 50%; ; outline: none; padding: 0; margin-left: 30px;" class="btn btn-primary" >
+                                    <i class="ti ti-facebook"></i>
+                                </button>
+                                <button  style="width: 50px;height: 50px;border-radius: 50%; outline: none;padding: 0; margin: 0 45px;" class="btn btn-success">
+                                    <i class=" ti ti-google"></i>
+                                </button>
+                                <button  style="width: 50px;height: 50px;border-radius: 50%; outline: none;padding: 0;" class="btn btn-warning">
+                                    <i class=" ti ti-microsoft" style="color: white;"></i>
+                                </button>
+                            </div>
+                           
+                        </div>
+                        <p>Bạn chưa có tài khoản!!! <a href="./DangKy.html">Đăng kí ngay</a></p>
+                    <!-- </form> -->
+                </div>
+                <div class="left">
+                    <img style="width: 400px;" src="../DoAnCoSo1/images/Home/fish.png" alt="">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function loginRun() {
+            var username = $("#email").val();
+            var password = $("#pass").val();
+
+            if(username === "test@gmail.com" && password === "123123"){
+                window.location.href = "./index.html";
+            }else if(username === "admin@gmail.com" && password === "admin"){
+                window.location.href = "./admin.html";
+            }else{
+                
+                alert("Tên đăng nhập hay mật khẩu không chính xác, Vui lòng nhập lại")
+            }
+            
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,1316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/img/Home/Logo.jpg" type="image/x-icon">
+    <title>Sản Phẩm - ASBiO</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-5.15.3-web/css/all.min.css">
+    <link rel="stylesheet" href="./assets/fonts/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="./assets/css/css_tintuc.css">
+    <link rel="stylesheet" href="./assets/css/reponsive_homepage.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="main">
+        <div class="header__nho" data-aos="fade">
+            <div class="header__nho-Social-Network">
+                <ul class="Social-Network__ul">
+                    <li class="Social-Network__li">
+                        <i class="ti-facebook"></i>
+                    </li>
+                    <li class="Social-Network__li">
+                        <i class="ti-pinterest"></i>
+                    </li>
+                    <li class="Social-Network__li">
+                        <i class="ti-twitter"></i>
+                    </li>
+                    <li class="Social-Network__li">
+                        <i class="ti-skype"></i>
+                    </li>
+                    <li class="Social-Network__li">
+                        <i class="ti-instagram"></i>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="header__nho-item">
+                <ul class="header__nho-item-ul">
+                    <li class="header__nho_search">
+                        <div class="input-group-append">
+                            <input style="border-radius: 20px;border:none; outline: none; padding-left: 12px;"
+                                type="text" placeholder="Search">
+                            <button style="border-radius: 20px;" class="btn btn-info ti-search" type="submit"></button>
+                        </div>
+                    </li>
+                    <li class="header__nho-item-li header__nho-item-li-lag">
+                        <a href="#" class="link link1"><i class="header__nho-item_ke-doc"> VI</i></a>
+                    </li>
+                    <li class="header__nho-item-li header__nho-item-li-lag">
+                        <a href="#" class="link"><i> EN</i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li>
+                    <div class="logo">
+                        <img style="width: 30%; margin-left: 35%;" src="./images/Logo1.jpg" alt="logo">
+                    </div>
+                </li>
+                <li><a href="./index.html">Trang Chủ<i class="" aria-hidden="true"></i></a></li>
+                <li><a href="./tintuc.html">Tin Tức<i class="" aria-hidden="true"></i></a></li>
+                <li><a href="./giaiphap.html">Giải pháp<i class="" aria-hidden="true"></i></a></li>
+                <li><a href="./sanpham.html">Sản phẩm</a></li>
+                <li><a href="./AboutUs.html">Giới thiệu <i class="" aria-hidden="true"></i></a></li>
+            </ul>
+            <ul class="nav-right">
+                <li><a href="./DangNhap.html"><i class="fa fa-user dangnhap" aria-hidden="true"
+                            style="font-size: 16px;"></i></a>
+                </li>
+                <li> <a href="./cart.html"><i class="fa fa-shopping-cart dangnhap" aria-hidden="true" style="font-size: 16px;"></i>
+                    </a>
+
+                </li>
+                <li><a href="">
+                        <i class="fa fa-bars thanhmenu" aria-hidden="true" style="font-size: 16px;"></i></a></li>
+            </ul>
+            <div class="mobile_nav">
+                <div class="user">
+                    <span><a href="./DangNhap.html"><i class="fa fa-user-circle"
+                                style="font-size: 16px;"></i></a></span>
+                </div>
+                <div class="thanh_menu">
+                    <span onclick="OpenNav()"><i class="fa fa-bars" style="font-size: 16px; color: #000;"></i></span>
+                </div>
+                <div class="logo_mobile">
+                    <div class="logo_main text-center">
+                        <img style="width: 30%; margin-left: 35%;" src="./images/Logo1.jpg" alt="logo">
+                    </div>
+                </div>
+                <div id="slide_nav_moblie" class="sidenav">
+                    <p class="closebtn" onclick="CloseNav()">&times;</p>
+                    <a href="./index.html">Trang Chủ<i class="" aria-hidden="true"></i></a>
+                    <a href="./tintuc.html">Tin Tức<i class="" aria-hidden="true"></i></a>
+                    <a href="./giaiphap.html">Giải pháp<i class="" aria-hidden="true"></i></a>
+                    <a href="./sanpham.html">Sản phẩm</a></li>
+                    <a href="./AboutUs.html">Giới thiệu <i class="" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </nav>
+        <!-- START SLIDE SHOW -->
+        <div class="silde_show">
+            <div class="container">
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active">
+                        </li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="single_box"
+                                        style="background: linear-gradient(-180deg, rgb(255, 255, 255) 65%, rgb(39, 169, 255) 130%);">
+                                        <div class="img_area">
+                                            <img src="./assets/img/SanPham/tom5.jpg" alt="">
+                                        </div>
+                                        <div class="text_area">
+                                            <h4>TETRA</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="single_box"
+                                        style="background: linear-gradient(-180deg, rgb(255, 255, 255) 65%, rgb(39, 169, 255) 130%);">
+                                        <div class="img_area">
+                                            <img src="./assets/img/SanPham/tom6.jpg" alt="">
+                                        </div>
+                                        <div class="text_area">
+                                            <h4>SPORA</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="single_box"
+                                        style="background: linear-gradient(-180deg, rgb(255, 255, 255) 65%, rgb(39, 169, 255) 130%);">
+                                        <div class="img_area">
+                                            <img src="./assets/img/SanPham/ca3.png" alt="">
+                                        </div>
+                                        <div class="text_area">
+                                            <h4>SPORA</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="single_box"
+                                        style="background: linear-gradient(-180deg, rgb(255, 255, 255) 65%, rgb(39, 169, 255) 130%);">
+                                        <div class="img_area">
+                                            <img src="./assets/img/SanPham/tom3.jpg" alt="">
+                                        </div>
+                                        <div class="text_area">
+                                            <h4>TETRA</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item ">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="single_box"
+                                        style="background: linear-gradient(-180deg, rgb(255, 255, 255) 65%, rgb(39, 169, 255) 130%);">
+                                        <div class="img_area">
+                                            <img src="./assets/img/SanPham/tom1.jpg" alt="">
+                                        </div>
+                                        <div class="text_area">
+                                            <h4>TAKA</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="single_box"
+                                        style="background: linear-gradient(-180deg, rgb(255, 255, 255) 65%, rgb(39, 169, 255) 130%);">
+                                        <div class="img_area">
+                                            <img src="./assets/img/SanPham/tom2.jpg" alt="">
+                                        </div>
+                                        <div class="text_area">
+                                            <h4>TAKA</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="single_box"
+                                        style="background: linear-gradient(-180deg, rgb(255, 255, 255) 65%, rgb(39, 169, 255) 130%);">
+                                        <div class="img_area">
+                                            <img src="./assets/img/SanPham/tom3.jpg" alt="">
+                                        </div>
+                                        <div class="text_area">
+                                            <h4>GENTA - PRO</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="single_box"
+                                        style="background: linear-gradient(-180deg, rgb(255, 255, 255) 65%, rgb(39, 169, 255) 130%);">
+                                        <div class="img_area">
+                                            <img src="./assets/img/SanPham/tom4.jpg" alt="">
+                                        </div>
+                                        <div class="text_area">
+                                            <h4>GENTA - PRO</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END SLIDE SHOW -->
+
+        <!-- <div class="select">
+                <select name="product" id="select">
+                    <div class="option" style="margin: 16px 0;">
+                        <option class="" value="a-z">Sắp xếp từ A - Z</option>
+                        <option value="z-a">Sắp xếp từ Z - A</option>
+                        <option value="new">Mới Nhất</option>
+                        <option value="love">Được Yêu Thích Nhất</option>
+                        
+                    </div>
+                </select>        
+            </div> -->
+        <!-- THANH FITTER -->
+        <div class="container mt-5">
+            <div class="row">
+                <div id="left-col" class="col-xs-12 col-sm-4 col-md-3">
+                    <img class="w-100 mb-3" src="./images/Home/thang-long-2021.gif" alt="">
+                    <div id="product">
+                        <h3 class="text-center">Product</h3>
+                        <ul>
+                            <li class="first-li"><a href="">THỨC ĂN NUÔI TÔM THẺ TT662 20KG</a>
+
+                            </li>
+                            <li class="first-li"><a href="">THỨC ĂN CÁ MÚ S030.F02.015 S01-S03 25KG</a>
+
+                            </li>
+                            <li class="first-li"><a href="">THỨC ĂN NUÔI TÔM THẺ TT662 20KG</a>
+
+                            </li>
+                            <li class="first-li"><a href="">THỨC ĂN CÁ MÚ S030.F02.015 S01-S03 25KG</a>
+
+                            </li>
+                            <li class="first-li"><a href="">THỨC ĂN CÁ RÔ PHI S030.F02.002 T1-T5 25KG</a></li>
+                        </ul>
+
+                    </div>
+                    <div id="filter_by_price">
+                        <h3>FILTER BY PRICE</h3>
+                        <div class="slider-range">
+                            <input style="padding: 20px 65px;" type="range" value="50000" min="0" max="12000000"
+                                step="500">
+                        </div>
+                        <input type="button" value="FILTER" class="btn btn-default">
+                        <p>Giá Cả:</p>
+                        <input type="number" name="" id="">
+                        <input type="number" name="" id="">
+                        <div class="agricultural">
+                        </div>
+                        <div id="sanpham">
+                            <h3>Bioproducts</h3>
+                            <ul>
+                                <li class="first-li"><a href="">SUPPER MIX</a>
+
+                                </li>
+                                <li class="first-li"><a href="">TIGER MEN PLUS</a>
+
+                                </li>
+                                <li class="first-li"><a href="">BIOCHIP</a>
+
+                                </li>
+                                <li class="first-li"><a href="">TIGER MEN</a>
+
+                                </li>
+                                <li class="first-li"><a href="">ZEOLITE</a></li>
+                            </ul>
+                        </div>
+                        <div id="featured">
+                            <h3>FEATURED</h3>
+                            <img class="w-100 mb-3" src="./images/vietgap-1.jpg" alt="">
+                            <img class="w-100 mb-3" src="./images/vietshrimp2021-update.gif" alt="">
+                            <img class="w-100 mb-3" src="./images/csdlgiong-thucan.png   " alt="">
+                            <img class="w-100 mb-3" src="./images/Home/thang-long-2021.gif" alt="">
+                            <img class="w-100 mb-3" src="./images/Home/Uni-President-2021.gif" alt="">
+                            <img class="w-100 mb-3" src="./images/Home/web_thuysan-032021.gif" alt="">
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- SAN PHAM -->
+
+                <div id="right-col" class="col-xs-12 col-sm-8 col-md-9">
+                    <!-- END THANH FITTER -->
+                    <div class="chuyentrang pl-3">
+                        <ul class="nav nav-pills" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" data-toggle="pill" href="#home">THỨC ĂN THỦY SẢN</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="pill" href="#menu1">CHẾ PHẨM SINH HỌC</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="pill" href="#menu2">THUỐC TRỊ BỆNH</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Tab panes -->
+                    <div class="tab-content mt-lg-n4">
+                        <div id="home" class="container tab-pane active"><br>
+
+
+                            <!-- Card -->
+                            <div class="card md-3 card_focus mt-3 mb-3" style="max-width: 60rem;">
+                                <div class="row no-gutters">
+                                    <div class="col-md-4">
+                                        <div class=" text-white mb-0 d-flex border-right"
+                                            style="width: 100%; height: 20rem">
+                                            <div class="card-body">
+                                                <span class="badge badge-danger">-30%</span>
+                                                <img src="./assets/img/tintuc/thuc_an_tom_the_lion.jpg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <h4 class="card-title"><a href="./thucAn.html">THỨC ĂN NUÔI TÔM THẺ<br> TT662 20KG</a> </h4>
+                                            <div class="danhgia">
+                                                <div class="fa fa-star"></div>
+                                                <div class="fa fa-star"></div>
+                                                <div class="fa fa-star"></div>
+                                                <div class="fa fa-star"></div>
+                                                <div class="fa fa-star-half-alt"></div>
+                                            </div>
+                                            <div class="danhgia-text">
+                                                <i>10 review</i>
+                                            </div>
+                                            <hr class="w-25" style="border: 2px solid #ccc; background-color: #ccc;">
+                                            <p class="card-text">
+                                                This is a wider card with supporting text below as a natural
+                                                lead-in to additional content. This content is a little bit
+                                                longer.
+                                            </p>
+                                            <p class="card-text">
+                                                <small class="text-muted">Last updated 3 mins ago</small>
+                                            </p>
+
+                                            <div class="btn-search">
+                                                <input type="button" value="ADD TO CART">
+                                                <a href="./cart.html"></a>
+                                                <button type="button" class="btn ">
+                                                    <i class="search-icon ti-search "></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card md-3 card_focus mt-3 mb-3" style="max-width: 60rem;">
+                                <div class="row no-gutters">
+                                    <div class="col-md-4">
+                                        <div class="card text-white mb-0 d-flex" style="width: 100%; height: 20rem">
+                                            <div class="card-body">
+                                                <span class="badge badge-danger">-30%</span>
+                                                <img src="./assets/img/tintuc/thuc_an_tom_the_panda.jpg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <h4 class="card-title">THỨC ĂN NUÔI CÁ RÔ PHI <br> TT662 20KG</h4>
+                                            <div class="danhgia">
+                                                <div class="fa fa-star"></div>
+                                                <div class="fa fa-star"></div>
+                                                <div class="fa fa-star"></div>
+                                                <div class="fa fa-star"></div>
+                                                <div class="fa fa-star-half-alt"></div>
+                                            </div>
+                                            <div class="danhgia-text">
+                                                <i>10 review</i>
+                                            </div>
+                                            <hr class="w-25" style="border: 2px solid #ccc; background-color: #ccc;">
+                                            <p class="card-text">
+                                                This is a wider card with supporting text below as a natural
+                                                lead-in to additional content. This content is a little bit
+                                                longer.
+                                            </p>
+                                            <p class="card-text">
+                                                <small class="text-muted">Last updated 3 mins ago</small>
+                                            </p>
+
+                                            <div class="btn-search">
+                                                <input type="submit" value="ADD TO CART">
+                                                <button type="button" class="btn ">
+                                                    <i class="search-icon ti-search "></i>
+                                                </button>
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card md-3 card_focus mt-3 mb-3" style="max-width: 60rem;">
+                                <div class="row no-gutters">
+                                    <div class="col-md-4">
+                                        <div class="card text-white mb-0 d-flex" style="width: 100%; height: 20rem">
+                                            <div class="card-body">
+                                                <span class="badge badge-danger">-30%</span>
+                                                <img style="width: 100%; height: 99%"
+                                                    src="./assets/img/tintuc/thuc_an_tom_the.jpg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <h4 class="card-title">THỨC ĂN NUÔI CÁ RÔ PHI <br> TT662 20KG</h4>
+                                            <div class="danhgia">
+                                                <div class="fa fa-star"></div>
+                                                <div class="fa fa-star"></div>
+                                                <div class="fa fa-star"></div>
+                                                <div class="fa fa-star"></div>
+                                                <div class="fa fa-star-half-alt"></div>
+                                            </div>
+                                            <div class="danhgia-text">
+                                                <i>10 review</i>
+                                            </div>
+                                            <hr class="w-25" style="border: 2px solid #ccc; background-color: #ccc;">
+                                            <p class="card-text">
+                                                This is a wider card with supporting text below as a natural
+                                                lead-in to additional content. This content is a little bit
+                                                longer.
+                                            </p>
+                                            <p class="card-text">
+                                                <small class="text-muted">Last updated 3 mins ago</small>
+                                            </p>
+
+                                            <div class="btn-search">
+                                                <input type="submit" value="ADD TO CART">
+                                                <button type="button" class="btn ">
+                                                    <i class="search-icon ti-search "></i>
+                                                </button>
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card md-3 card_focus mt-3 mb-3" style="max-width: 60rem;">
+                                <div class="row no-gutters">
+                                    <div class="col-md-4">
+                                        <div class="card text-white mb-0 d-flex" style="width: 100%; height: 20rem">
+                                            <div class="card-body">
+                                                <span class="badge badge-danger">-30%</span>
+                                                <img style="max-width: 99%; height: 99%;"
+                                                    src="./assets/img/tintuc/thuc_an_tom_the_lion.jpg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <h4 class="card-title">SUPPER MIX
+                                                <br>THỨC ĂN NUÔI TÔM THẺ TT662 20KG
+                                            </h4>
+                                            <div class="danhgia">
+                                                <div class="fa fa-star"></div>
+                                                <div class="fa fa-star"></div>
+                                                <div class="fa fa-star"></div>
+                                                <div class="fa fa-star-half-alt"></div>
+                                                <div class="far fa-star"></div>
+                                            </div>
+                                            <div class="danhgia-text">
+                                                <i>7 review</i>
+                                            </div>
+                                            <hr class="w-25" style="border: 2px solid #ccc; background-color: #ccc;">
+                                            <p class="card-text">
+                                                This is a wider card with supporting text below as a natural
+                                                lead-in to additional content. This content is a little bit
+                                                longer.
+                                            </p>
+                                            <p class="card-text">
+                                                <small class="text-muted">Last updated 3 mins ago</small>
+                                            </p>
+
+                                            <div class="btn-search">
+                                                <input type="submit" value="ADD TO CART">
+                                                <button type="button" class="btn ">
+                                                    <i class="search-icon ti-search "></i>
+                                                </button>
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card md-3 card_focus mt-3 mb-3" style="max-width: 60rem;">
+                                <div class="row no-gutters">
+                                    <div class="col-md-4">
+                                        <div class="card text-white mb-0 d-flex" style="width: 100%; height: 20rem">
+                                            <div class="card-body">
+                                                <span class="badge badge-danger">-30%</span>
+                                                <img src="./assets/img/tintuc/thuc_an_tom_the.jpg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <h4 class="card-title">TIGER
+                                                <br> THỨC ĂN NUÔI TÔM THẺ TT662 20KG
+                                            </h4>
+                                            <div class="danhgia">
+                                                <div class="fa fa-star"></div>
+                                                <div class="fa fa-star"></div>
+                                                <div class="fa fa-star-half-alt"></div>
+                                                <div class="far fa-star"></div>
+                                                <div class="far fa-star"></div>
+                                            </div>
+                                            <div class="danhgia-text">
+                                                <i>5 review</i>
+                                            </div>
+                                            <hr class="w-25" style="border: 2px solid #ccc; background-color: #ccc;">
+                                            <p class="card-text">
+                                                This is a wider card with supporting text below as a natural
+                                                lead-in to additional content. This content is a little bit
+                                                longer.
+                                            </p>
+                                            <p class="card-text">
+                                                <small class="text-muted">Last updated 3 mins ago</small>
+                                            </p>
+
+                                            <div class="btn-search">
+                                                <input type="submit" value="ADD TO CART">
+                                                <button type="button" class="btn ">
+                                                    <i class="search-icon ti-search "></i>
+                                                </button>
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card md-3 card_focus mt-3 mb-3" style="max-width: 60rem;">
+                                <div class="row no-gutters">
+                                    <div class="col-md-4">
+                                        <div class="card text-white mb-0 d-flex" style="width: 100%; height: 20rem">
+                                            <div class="card-body">
+                                                <span class="badge badge-danger">-30%</span>
+                                                <img src="./assets/img/tintuc/thuc_an_tom_the_bitech.jpg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Bi-Tech
+                                                <br>THỨC ĂN NUÔI TÔM THẺ TA662 10KG
+                                            </h4>
+                                            <div class="danhgia">
+                                                <div class="fa fa-star"></div>
+                                                <div class="fa fa-star"></div>
+                                                <div class="fa fa-star"></div>
+                                                <div class="fa fa-star"></div>
+                                                <div class="fa fa-star-half-alt"></div>
+                                            </div>
+                                            <div class="danhgia-text">
+                                                <i>10 review</i>
+                                            </div>
+                                            <hr class="w-25" style="border: 2px solid #ccc; background-color: #ccc;">
+                                            <p class="card-text">
+                                                This is a wider card with supporting text below as a natural
+                                                lead-in to additional content. This content is a little bit
+                                                longer.
+                                            </p>
+                                            <p class="card-text">
+                                                <small class="text-muted">Last updated 3 mins ago</small>
+                                            </p>
+
+                                            <div class="btn-search">
+                                                <input type="submit" value="ADD TO CART">
+                                                <button type="button" class="btn ">
+                                                    <i class="search-icon ti-search "></i>
+                                                </button>
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Card -->
+                        <div id="menu1" class="container tab-pane fade "><br>
+                            <div class="card md-3 card_focus mt-3 mb-3 " style="max-width: 60rem;">
+                                <div class="row no-gutters">
+                                    <div class="col-md-4">
+                                        <div class=" text-white mb-0 d-flex border-right"
+                                            style="width: 100%; height: 20rem">
+                                            <div class="card-body">
+                                                <span class="badge badge-danger">-30%</span>
+                                                <img src="./assets/img/SanPham/tom5.jpg " alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <h4 class="card-title">SUPPER MIX</h4>
+                                            <div class="danhgia">
+                                                <div class="fa fa-star"></div>
+                                                <div class="fa fa-star"></div>
+                                                <div class="fa fa-star"></div>
+                                                <div class="fa fa-star"></div>
+                                                <div class="fa fa-star-half-alt"></div>
+                                            </div>
+                                            <div class="danhgia-text">
+                                                <i>10 review</i>
+                                            </div>
+                                            <hr class="w-25" style="border: 2px solid #ccc; background-color: #ccc;">
+                                            <p class="card-text">
+                                                This is a wider card with supporting text below as a natural
+                                                lead-in to additional content. This content is a little bit
+                                                longer.
+                                            </p>
+                                            <p class="card-text">
+                                                <small class="text-muted">Last updated 3 mins ago</small>
+                                            </p>
+
+                                            <div class="btn-search">
+                                                <input type="submit" value="ADD TO CART">
+                                                <button type="button" class="btn ">
+                                                    <i class="search-icon ti-search "></i>
+                                                </button>
+                                                
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card md-3 card_focus mt-3 mb-3" style="max-width: 60rem;">
+                                <div class="row no-gutters">
+                                    <div class="col-md-4">
+                                        <div class="card text-white mb-0 d-flex" style="width: 100%; height: 20rem">
+                                            <div class="card-body">
+                                                <span class="badge badge-danger">-30%</span>
+                                                <img src="./assets/img/sanpham/tom2.jpg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <h4 class="card-title">SUPPER MIX</h4>
+                                            <div class="danhgia">
+                                                <div class="fa fa-star"></div>
+                                                <div class="fa fa-star"></div>
+                                                <div class="fa fa-star"></div>
+                                                <div class="fa fa-star"></div>
+                                                <div class="fa fa-star-half-alt"></div>
+                                            </div>
+                                            <div class="danhgia-text">
+                                                <i>10 review</i>
+                                            </div>
+                                            <hr class="w-25" style="border: 2px solid #ccc; background-color: #ccc;">
+                                            <p class="card-text">
+                                                This is a wider card with supporting text below as a natural
+                                                lead-in to additional content. This content is a little bit
+                                                longer.
+                                            </p>
+                                            <p class="card-text">
+                                                <small class="text-muted">Last updated 3 mins ago</small>
+                                            </p>
+
+                                            <div class="btn-search">
+                                                <input type="submit" value="ADD TO CART">
+                                                <button type="button" class="btn ">
+                                                    <i class="search-icon ti-search "></i>
+                                                </button>
+                                                
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card md-3 card_focus mt-3 mb-3" style="max-width: 60rem;">
+                                <div class="row no-gutters">
+                                    <div class="col-md-4">
+                                        <div class="card text-white mb-0 d-flex" style="width: 100%; height: 20rem">
+                                            <div class="card-body">
+                                                <span class="badge badge-danger">-30%</span>
+                                                <img style="width: 100%; height: 99%"
+                                                    src="./assets/img/SanPham/tom3.jpg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <h4 class="card-title">SUPPER MIX</h4>
+                                            <div class="danhgia">
+                                                <div class="fa fa-star"></div>
+                                                <div class="fa fa-star"></div>
+                                                <div class="fa fa-star"></div>
+                                                <div class="fa fa-star"></div>
+                                                <div class="fa fa-star-half-alt"></div>
+                                            </div>
+                                            <div class="danhgia-text">
+                                                <i>10 review</i>
+                                            </div>
+                                            <hr class="w-25" style="border: 2px solid #ccc; background-color: #ccc;">
+                                            <p class="card-text">
+                                                This is a wider card with supporting text below as a natural
+                                                lead-in to additional content. This content is a little bit
+                                                longer.
+                                            </p>
+                                            <p class="card-text">
+                                                <small class="text-muted">Last updated 3 mins ago</small>
+                                            </p>
+
+                                            <div class="btn-search">
+                                                <input type="submit" value="ADD TO CART">
+                                                <button type="button" class="btn ">
+                                                    <i class="search-icon ti-search "></i>
+                                                </button>
+                                                
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card md-3 card_focus mt-3 mb-3" style="max-width: 60rem;">
+                                <div class="row no-gutters">
+                                    <div class="col-md-4">
+                                        <div class="card text-white mb-0 d-flex" style="width: 100%; height: 20rem">
+                                            <div class="card-body">
+                                                <span class="badge badge-danger">-30%</span>
+                                                <img style="max-width: 99%; height: 99%;"
+                                                    src="./assets/img/SanPham/tom4.jpg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <h4 class="card-title">SUPPER MIX
+                                                <br>THỨC ĂN NUÔI TÔM THẺ TT662 20KG
+                                            </h4>
+                                            <div class="danhgia">
+                                                <div class="fa fa-star"></div>
+                                                <div class="fa fa-star"></div>
+                                                <div class="fa fa-star"></div>
+                                                <div class="fa fa-star-half-alt"></div>
+                                                <div class="far fa-star"></div>
+                                            </div>
+                                            <div class="danhgia-text">
+                                                <i>7 review</i>
+                                            </div>
+                                            <hr class="w-25" style="border: 2px solid #ccc; background-color: #ccc;">
+                                            <p class="card-text">
+                                                This is a wider card with supporting text below as a natural
+                                                lead-in to additional content. This content is a little bit
+                                                longer.
+                                            </p>
+                                            <p class="card-text">
+                                                <small class="text-muted">Last updated 3 mins ago</small>
+                                            </p>
+
+                                            <div class="btn-search">
+                                                <input type="submit" value="ADD TO CART">
+                                                <button type="button" class="btn ">
+                                                    <i class="search-icon ti-search "></i>
+                                                </button>
+                                                
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card md-3 card_focus mt-3 mb-3" style="max-width: 60rem;">
+                                <div class="row no-gutters">
+                                    <div class="col-md-4">
+                                        <div class="card text-white mb-0 d-flex" style="width: 100%; height: 20rem">
+                                            <div class="card-body">
+                                                <span class="badge badge-danger">-30%</span>
+                                                <img src="./assets/img/tintuc/thuc_an_tom_the.jpg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <h4 class="card-title">TIGER
+                                                <br> THỨC ĂN NUÔI TÔM THẺ TT662 20KG
+                                            </h4>
+                                            <div class="danhgia">
+                                                <div class="fa fa-star"></div>
+                                                <div class="fa fa-star"></div>
+                                                <div class="fa fa-star-half-alt"></div>
+                                                <div class="far fa-star"></div>
+                                                <div class="far fa-star"></div>
+                                            </div>
+                                            <div class="danhgia-text">
+                                                <i>5 review</i>
+                                            </div>
+                                            <hr class="w-25" style="border: 2px solid #ccc; background-color: #ccc;">
+                                            <p class="card-text">
+                                                This is a wider card with supporting text below as a natural
+                                                lead-in to additional content. This content is a little bit
+                                                longer.
+                                            </p>
+                                            <p class="card-text">
+                                                <small class="text-muted">Last updated 3 mins ago</small>
+                                            </p>
+
+                                            <div class="btn-search">
+                                                <input type="submit" value="ADD TO CART">
+                                                <button type="button" class="btn ">
+                                                    <i class="search-icon ti-search "></i>
+                                                </button>
+                                                
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card md-3 card_focus mt-3 mb-3" style="max-width: 60rem;">
+                                <div class="row no-gutters">
+                                    <div class="col-md-4">
+                                        <div class="card text-white mb-0 d-flex" style="width: 100%; height: 20rem">
+                                            <div class="card-body">
+                                                <span class="badge badge-danger">-30%</span>
+                                                <img src="./assets/img/tintuc/thuc_an_tom_the_bitech.jpg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Bi-Tech
+                                                <br>THỨC ĂN NUÔI TÔM THẺ TA662 10KG
+                                            </h4>
+                                            <div class="danhgia">
+                                                <div class="fa fa-star"></div>
+                                                <div class="fa fa-star"></div>
+                                                <div class="fa fa-star"></div>
+                                                <div class="fa fa-star"></div>
+                                                <div class="fa fa-star-half-alt"></div>
+                                            </div>
+                                            <div class="danhgia-text">
+                                                <i>10 review</i>
+                                            </div>
+                                            <hr class="w-25" style="border: 2px solid #ccc; background-color: #ccc;">
+                                            <p class="card-text">
+                                                This is a wider card with supporting text below as a natural
+                                                lead-in to additional content. This content is a little bit
+                                                longer.
+                                            </p>
+                                            <p class="card-text">
+                                                <small class="text-muted">Last updated 3 mins ago</small>
+                                            </p>
+
+                                            <div class="btn-search">
+                                                <input type="submit" value="ADD TO CART">
+                                                <button type="button" class="btn ">
+                                                    <i class="search-icon ti-search "></i>
+                                                </button>
+                                                
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="menu2" class="container tab-pane fade "><br>
+                            <div class="card md-3 card_focus mt-3 mb-3" style="max-width: 60rem;">
+                                <div class="row no-gutters">
+                                    <div class="col-md-4">
+                                        <div class=" text-white mb-0 d-flex border-right"
+                                            style="width: 100%; height: 20rem">
+                                            <div class="card-body">
+                                                <span class="badge badge-danger">-30%</span>
+                                                <img src="./assets/img/SanPham/tom1.jpg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <h4 class="card-title">SUPPER MIX</h4>
+                                            <div class="danhgia">
+                                                <div class="fa fa-star"></div>
+                                                <div class="fa fa-star"></div>
+                                                <div class="fa fa-star"></div>
+                                                <div class="fa fa-star"></div>
+                                                <div class="fa fa-star-half-alt"></div>
+                                            </div>
+                                            <div class="danhgia-text">
+                                                <i>10 review</i>
+                                            </div>
+                                            <hr class="w-25" style="border: 2px solid #ccc; background-color: #ccc;">
+                                            <p class="card-text">
+                                                This is a wider card with supporting text below as a natural
+                                                lead-in to additional content. This content is a little bit
+                                                longer.
+                                            </p>
+                                            <p class="card-text">
+                                                <small class="text-muted">Last updated 3 mins ago</small>
+                                            </p>
+
+                                            <div class="btn-search">
+                                                <input type="submit" value="ADD TO CART">
+                                                <button type="button" class="btn ">
+                                                    <i class="search-icon ti-search "></i>
+                                                </button>
+                                                
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card md-3 card_focus mt-3 mb-3" style="max-width: 60rem;">
+                                <div class="row no-gutters">
+                                    <div class="col-md-4">
+                                        <div class="card text-white mb-0 d-flex" style="width: 100%; height: 20rem">
+                                            <div class="card-body">
+                                                <span class="badge badge-danger">-30%</span>
+                                                <img src="./assets/img/sanpham/tom2.jpg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <h4 class="card-title">SUPPER MIX</h4>
+                                            <div class="danhgia">
+                                                <div class="fa fa-star"></div>
+                                                <div class="fa fa-star"></div>
+                                                <div class="fa fa-star"></div>
+                                                <div class="fa fa-star"></div>
+                                                <div class="fa fa-star-half-alt"></div>
+                                            </div>
+                                            <div class="danhgia-text">
+                                                <i>10 review</i>
+                                            </div>
+                                            <hr class="w-25" style="border: 2px solid #ccc; background-color: #ccc;">
+                                            <p class="card-text">
+                                                This is a wider card with supporting text below as a natural
+                                                lead-in to additional content. This content is a little bit
+                                                longer.
+                                            </p>
+                                            <p class="card-text">
+                                                <small class="text-muted">Last updated 3 mins ago</small>
+                                            </p>
+
+                                            <div class="btn-search">
+                                                <input type="submit" value="ADD TO CART">
+                                                <button type="button" class="btn ">
+                                                    <i class="search-icon ti-search "></i>
+                                                </button>
+                                                
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card md-3 card_focus mt-3 mb-3" style="max-width: 60rem;">
+                                <div class="row no-gutters">
+                                    <div class="col-md-4">
+                                        <div class="card text-white mb-0 d-flex" style="width: 100%; height: 20rem">
+                                            <div class="card-body">
+                                                <span class="badge badge-danger">-30%</span>
+                                                <img style="width: 100%; height: 99%"
+                                                    src="./assets/img/SanPham/tom3.jpg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <h4 class="card-title">SUPPER MIX</h4>
+                                            <div class="danhgia">
+                                                <div class="fa fa-star"></div>
+                                                <div class="fa fa-star"></div>
+                                                <div class="fa fa-star"></div>
+                                                <div class="fa fa-star"></div>
+                                                <div class="fa fa-star-half-alt"></div>
+                                            </div>
+                                            <div class="danhgia-text">
+                                                <i>10 review</i>
+                                            </div>
+                                            <hr class="w-25" style="border: 2px solid #ccc; background-color: #ccc;">
+                                            <p class="card-text">
+                                                This is a wider card with supporting text below as a natural
+                                                lead-in to additional content. This content is a little bit
+                                                longer.
+                                            </p>
+                                            <p class="card-text">
+                                                <small class="text-muted">Last updated 3 mins ago</small>
+                                            </p>
+
+                                            <div class="btn-search">
+                                                <input type="submit" value="ADD TO CART">
+                                                <button type="button" class="btn ">
+                                                    <i class="search-icon ti-search "></i>
+                                                </button>
+                                                
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card md-3 card_focus mt-3 mb-3" style="max-width: 60rem;">
+                                <div class="row no-gutters">
+                                    <div class="col-md-4">
+                                        <div class="card text-white mb-0 d-flex" style="width: 100%; height: 20rem">
+                                            <div class="card-body">
+                                                <span class="badge badge-danger">-30%</span>
+                                                <img style="max-width: 99%; height: 99%;"
+                                                    src="./assets/img/SanPham/tom4.jpg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <h4 class="card-title">SUPPER MIX
+                                                <br>THỨC ĂN NUÔI TÔM THẺ TT662 20KG
+                                            </h4>
+                                            <div class="danhgia">
+                                                <div class="fa fa-star"></div>
+                                                <div class="fa fa-star"></div>
+                                                <div class="fa fa-star"></div>
+                                                <div class="fa fa-star-half-alt"></div>
+                                                <div class="far fa-star"></div>
+                                            </div>
+                                            <div class="danhgia-text">
+                                                <i>7 review</i>
+                                            </div>
+                                            <hr class="w-25" style="border: 2px solid #ccc; background-color: #ccc;">
+                                            <p class="card-text">
+                                                This is a wider card with supporting text below as a natural
+                                                lead-in to additional content. This content is a little bit
+                                                longer.
+                                            </p>
+                                            <p class="card-text">
+                                                <small class="text-muted">Last updated 3 mins ago</small>
+                                            </p>
+
+                                            <div class="btn-search">
+                                                <input type="submit" value="ADD TO CART">
+                                                <button type="button" class="btn ">
+                                                    <i class="search-icon ti-search "></i>
+                                                </button>
+                                                
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card md-3 card_focus mt-3 mb-3" style="max-width: 60rem;">
+                                <div class="row no-gutters">
+                                    <div class="col-md-4">
+                                        <div class="card text-white mb-0 d-flex" style="width: 100%; height: 20rem">
+                                            <div class="card-body">
+                                                <span class="badge badge-danger">-30%</span>
+                                                <img src="./assets/img/SanPham/tom6.jpg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <h4 class="card-title">TIGER
+                                                <br> THỨC ĂN NUÔI TÔM THẺ TT662 20KG
+                                            </h4>
+                                            <div class="danhgia">
+                                                <div class="fa fa-star"></div>
+                                                <div class="fa fa-star"></div>
+                                                <div class="fa fa-star-half-alt"></div>
+                                                <div class="far fa-star"></div>
+                                                <div class="far fa-star"></div>
+                                            </div>
+                                            <div class="danhgia-text">
+                                                <i>5 review</i>
+                                            </div>
+                                            <hr class="w-25" style="border: 2px solid #ccc; background-color: #ccc;">
+                                            <p class="card-text">
+                                                This is a wider card with supporting text below as a natural
+                                                lead-in to additional content. This content is a little bit
+                                                longer.
+                                            </p>
+                                            <p class="card-text">
+                                                <small class="text-muted">Last updated 3 mins ago</small>
+                                            </p>
+
+                                            <div class="btn-search">
+                                                <input type="submit" value="ADD TO CART">
+                                                <button type="button" class="btn ">
+                                                    <i class="search-icon ti-search "></i>
+                                                </button>
+                                                
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card md-3 card_focus mt-3 mb-3" style="max-width: 60rem;">
+                                <div class="row no-gutters">
+                                    <div class="col-md-4">
+                                        <div class="card text-white mb-0 d-flex" style="width: 100%; height: 20rem">
+                                            <div class="card-body">
+                                                <span class="badge badge-danger">-30%</span>
+                                                <img src="./assets/img/SanPham/ca3.png  " alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Bi-Tech
+                                                <br>THỨC ĂN NUÔI TÔM THẺ TA662 10KG
+                                            </h4>
+                                            <div class="danhgia">
+                                                <div class="fa fa-star"></div>
+                                                <div class="fa fa-star"></div>
+                                                <div class="fa fa-star"></div>
+                                                <div class="fa fa-star"></div>
+                                                <div class="fa fa-star-half-alt"></div>
+                                            </div>
+                                            <div class="danhgia-text">
+                                                <i>10 review</i>
+                                            </div>
+                                            <hr class="w-25" style="border: 2px solid #ccc; background-color: #ccc;">
+                                            <p class="card-text">
+                                                This is a wider card with supporting text below as a natural
+                                                lead-in to additional content. This content is a little bit
+                                                longer.
+                                            </p>
+                                            <p class="card-text">
+                                                <small class="text-muted">Last updated 3 mins ago</small>
+                                            </p>
+
+                                            <div class="btn-search">
+                                                <input type="submit" value="ADD TO CART">
+                                                <button type="button" class="btn ">
+                                                    <i class="search-icon ti-search "></i>
+                                                </button>
+                                                
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Trang  -->
+                    <div class="container pagination_chuyentrang" style="height: 40px;">
+                        <div class="pagination">
+                            <!-- <a href="#">&laquo;</a> -->
+                            <a href="#" class="active">1</a>
+                            <a href="#">2</a>
+                            <a href="#">...</a>
+                            <a href="#">5</a>
+                            <a href="#">&raquo;</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END SAN PHAM -->
+        <div class="back_to_top">
+            <a href="#">
+                <span>
+                    <i class="fa fa-chevron-up" aria-hidden="true" style="font-size: 26px;width: 50px; color: #000; height: 38px;padding: 0px 14px;"></i>
+                </span>
+            </a>
+        </div>
+        <div class="chat_client">
+            <span>
+                <i class="fa fa-comment-alt" aria-hidden="true" style="font-size: 26px;width: 50px; color: #3e677ba6;; height: 38px;padding: 0px 12px;"></i>
+            </span>
+        </div>
+
+        <div class="back_to_top">
+            <a href="#">
+                <span>
+                    <i class="fa fa-chevron-up" aria-hidden="true" style="font-size: 26px;width: 50px; color: #000; height: 38px;padding: 0px 14px;"></i>
+                </span>
+            </a>
+        </div>
+        <div class="chat_client">
+            <span>
+                <i class="fa fa-comment-alt" aria-hidden="true" style="font-size: 26px;width: 50px; color: #3e677ba6;; height: 38px;padding: 0px 12px;"></i>
+            </span>
+        </div>
+
+        <!-- Y KIEN  -->
+        <div id="ykien">
+            <div class="contact">
+                <div class="right">
+                    <div class="container">
+                        <h2>Đăng ký nhận bản tin</h2>
+                        <p>Nhận bản tin từ Web AVG mọi ngày.</p>
+                        <div class="form-group">
+                            <label for="text">Tên của bạn:</label>
+                            <input type="text" class="form-control" placeholder="Họ và tên" id="name">
+                        </div>
+                        <div class="form-group">
+                            <label for="text">SĐT:</label>
+                            <input type="text" class="form-control" placeholder="Số Điện Thoại" id="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email address:</label>
+                            <input type="email" class="form-control" placeholder="Email" id="email">
+                        </div>
+                        <div class="form-group">
+                            <label for="comment">Comment:</label>
+                            <textarea class="form-control" rows="5" id="comment"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" class="btn btn-primary" value="GỬI">
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+        </div>
+        <!-- END Y KIEN -->
+        <!-- FOOTER -->
+        <div id="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-3 ">
+                        <h4>About Us</h4>
+                        <p>ASBiO luôn nỗ lực không ngừng trong việc nâng cao chất lượng dịch vụ, tìm kiếm và hợp tác
+                            với
+                            các
+                            đối tác uy tín để mang đến những sản phẩm tốt nhất, đáp ứng nhu cầu của quý khách hàng
+                        </p>
+                        <ul class="ti">
+                            <li><a href=""><i class="ti-facebook"></i></a></li>
+                            <li><a href=""><i class="ti-youtube"></i></a></li>
+                            <li><a href=""><i class="ti-instagram"></i></a></li>
+                            <li><a href=""><i class="ti-twitter"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-3 ">
+                        <h4 style="margin-left: 40px;">Menu</h4>
+                        <ul class="footer-menu">
+                            <li><a href="">Home</a></li>
+                            <li><a href="">Species</a></li>
+                            <li><a href="">Solutions</a></li>
+                            <li><a href="">About</a></li>
+                            <li><a href="">Product</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-3 ">
+                        <h4>Nhà Cung Cấp</h4>
+                        <ul class="nhacungcap">
+                            <li><a href="">Thăng Long</a></li>
+                            <li><a href="">Tigervet</a></li>
+                            <li><a href="">Vinavietco</a></li>
+                            <li><a href="">APA</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-3 ">
+                        <h4>Contact</h4>
+                        <h6>Addres:</h6>
+                        <p>470-Nam Kì Khởi Nghĩa - Hòa Quý - Ngũ Hành Sơn - ĐN</p>
+                        <h6>Phone:</h6>
+                        <p>0946.252.210</p>
+                        <h6>Email:</h6>
+                        <p>lvtan.20it1@gmail.vku.udn.vn</p>
+                    </div>
+                </div>
+                <div class="button-footer">
+                    <i style="color: beige;">Design by ASBiO</i>
+                </div>
+            </div>
+            <!-- END FOOTER -->
+
+        </div>
+        <script src="./assets/js/js-tintuc.js">
+
+        </script>
+        <script src="./assets/js/js-home-page.js"></script>
+        <script src="./assets/js/back_to_top.js"></script>
+
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init({
+                // offset:200,
+                duration: 1000,
+            });
+        </script>
+</body>
+
+</html>

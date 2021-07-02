@@ -1,0 +1,735 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+h3 {
+    background: linear-gradient(279deg, #a9f2ff, transparent);
+    ;
+    margin: 8px 0 8px 0;
+    padding: 0 10px;
+    border-left: 5px solid;
+}
+
+.clear {
+    clear: both;
+}
+
+span {
+    float: right;
+    font-size: 12px;
+    color: #bbb;
+    margin-top: 12px;
+}
+
+/* css cho phần header nhỏ */
+
+
+.header__nho {
+    position: relative;
+    background-color: #A4A4A4;
+    padding: 10px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 50px;
+}
+
+.header__nho-item {}
+
+.header__nho-item-ul {
+
+    margin: 0;
+}
+
+.header__nho-item-ul>.header__nho-item-li {
+    display: inline-block;
+}
+
+.header__nho_search {
+    list-style-type: none;
+    /* display: flex; */
+    position: absolute;
+    top: -15px;
+    right: 120px;
+}
+
+.header__nho-item-li {
+    position: relative;
+}
+
+.header__nho-item-li .link {
+    text-decoration: none;
+    outline: none;
+    color: white;
+
+}
+
+.header__nho-item-li .link1 {
+    color: #D8D8D8;
+}
+
+.header__nho-item-li:hover .link {
+    color: black;
+}
+
+.header__nho-item-li>i {}
+
+.header__nho-item-li-lag {
+    margin: 0 3px 0;
+}
+
+.header__nho-item-li-user {
+    margin: 0 0 0 10px;
+}
+
+.header__nho-item_ke-doc::after {
+    position: absolute;
+    content: "";
+    border: none;
+    border-left: 1px solid white;
+    height: 20px;
+    top: 3px;
+    left: 20px;
+}
+
+.header__nho-Social-Network {
+    justify-content: center;
+}
+
+.Social-Network__ul {
+    margin: 0;
+}
+
+.Social-Network__ul>.Social-Network__li {
+    display: inline-block;
+    margin: 0 5px 0;
+}
+
+.Social-Network__li:hover>i {
+    color: black;
+    cursor: pointer;
+}
+
+/* LOGO */
+.logo {
+    background-color: #f6f6f6;
+}
+
+/* NAVIGATION */
+/* NAV MOBILE */
+.mobile_nav{
+    display: none;
+    /* position: fixed;
+    top:0;
+    width: 100%;
+    height: 65px;
+    background: #fff;
+    padding: 0 170px;
+    box-sizing: border-box;
+    border: 1px solid #ddd; */
+}
+.logo_mobile{
+    width: 144px;
+    background-color: #f6f6f6;
+}
+
+
+/* LOGO */
+.logo {
+    width: 144px;
+    margin-top: 10px;
+    background-color: #f6f6f6;
+}
+
+/* NAVIGATION */
+nav {
+    position: sticky;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 65px;
+    background: #fff;
+    padding: 0 170px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+}
+
+nav .brand {
+    float: left;
+    height: 100%;
+    line-height: 80px;
+}
+
+nav .brand h2 {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+
+nav .brand>a img {
+    width: 150px;
+    opacity: 1;
+    margin-left: 10px 0px;
+    padding-bottom: 27px
+}
+
+nav>ul {
+    float: left;
+    display: flex;
+    margin: -10px;
+    padding: -10px;
+    margin-left: 25px;
+}
+
+nav ul li {
+    list-style: none;
+    position: relative;
+}
+
+
+nav>ul>li>a {
+    position: relative;
+    display: block;
+    height: 80px;
+    line-height: 80px;
+    padding: 0 20px;
+    box-sizing: border-box;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    transition: 0.5s
+}
+
+nav ul li a:hover {
+    color: #4897e0;
+}
+
+nav .sub-nav {
+    display: block;
+    background-color: #000;
+    margin-top: -10px;
+    padding: 0;
+    display: none;
+}
+
+nav .sub-nav li {
+    position: absolute;
+    list-style-type: none;
+    float: none;
+    background: #000;
+    padding: 3px 15px;
+}
+
+nav .sub-nav li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+nav li:hover .sub-nav {
+    display: block;
+}
+
+nav li i {
+    font-size: 10px;
+}
+
+nav .nav-right {
+    float: right;
+    margin-right: 100px;
+}
+.thanhmenu{
+    display: none;
+}
+
+.input-group-append {
+    margin-top: 24px;
+}
+
+/* NAV MOBILE */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    right: 0;
+    background-color: rgb(255, 255, 255); 
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  }
+  
+  /* The navigation menu links */
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #000000;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    background-color:  #86d9ff;
+    
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+/* END NAVIGATION */
+/* SLIDE SHOW */
+.silde_show{
+    margin-top: 24px;
+}
+.single_box{
+
+
+}
+
+.img_area{
+
+
+}
+.img_area img{
+    width: 100%;
+}
+.text_area{
+    text-align: center;
+}
+/* END SLIDE SHOW */
+
+/* Select */
+#select {
+    margin: 50px 0 0;
+    width: 100%;
+    padding: 12px;
+    outline: none;
+    color: #000;
+    border: 2px solid olivedrab
+}
+
+option {
+    /* box-sizing: border-box;
+    margin: 12px 0; */
+}
+
+/* END select */
+
+/* Content left start */
+#wrapper {
+    margin-top: 40px;
+}
+
+#wrapper #left-col {}
+
+/* #wrapper #left-col #product::before {
+    border-bottom: 1px solid #efefef;
+    border-top: 2px solid #efefef;
+    content: "";
+    height: 5px;
+    left: 0;
+    position: absolute;
+    top: 15px;
+    width: 100%;
+    z-index: 0;
+} */
+
+#wrapper #left-col h3 {
+    background: #fff none repeat scroll 0 0;
+    color: #2a2a2a;
+    display: inherit;
+    font-size: 18px;
+    line-height: 24px;
+    margin: 8px 0;
+    padding: 5px 44px 8px;
+    position: relative;
+    text-transform: uppercase;
+    z-index: 1;
+    border: none;
+    font-weight: 600;
+    text-align: center;
+}
+
+#left-col ul .first-li {
+    position: relative;
+    margin: 12px 0;
+}
+
+#left-col ul .first-li .plus-minus {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+#left-col ul .first-li::after {
+    content: "";
+    border-top: 1px solid #f1eeea;
+    display: inline-block;
+    height: 0.6em;
+    margin-left: 5px;
+    margin-right: -100%;
+    vertical-align: bottom;
+    width: 100%;
+    z-index: 98;
+    display: list-item;
+}
+
+#left-col ul .first-li>a {
+    font-weight: 450;
+    font-size: 16px;
+}
+
+#left-col ul li {
+    list-style-type: none;
+}
+
+#left-col ul li a {
+    color: #000;
+}
+
+#filter_by_price .btn {
+    outline: none;
+    border-radius: 20px;
+    padding: 8px 24px;
+    border: 1px solid olivedrab;
+    width: 50%;
+}
+
+
+/* Content left end */
+
+
+
+
+/* Content right start */
+#carouselExampleIndicators .carousel-indicators {
+    position: absolute;
+    right: 0;
+    bottom: -50px;
+    left: 0;
+    z-index: 15;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding-left: 0;
+    margin-right: 15%;
+    margin-left: 15%;
+    list-style: none;
+}
+
+.carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: olivedrab;
+
+}
+
+.single-box {
+    text-align: center;
+    height: 280px;
+    position: relative;
+    border: 1px solid olivedrab;
+
+}
+
+.img-area {
+    width: 300px;
+    height: 200px;
+}
+
+.img-area img {
+    width: 80%;
+    position: absolute;
+    top: 10px;
+    left: 10%;
+}
+
+.text-area {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+}
+
+
+/* CArd */
+
+#right-col>.card {
+    margin: 24px 0;
+}
+
+#main_cont div div i {
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    font-size: clamp(70px, 6vw, 200px);
+}
+
+.card .card-body img {
+    width: 100%;
+    height: 100%;
+}
+
+.card-body span {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 12px 12px;
+}
+
+.card-body .danhgia {
+    right: 4%;
+    position: absolute;
+    display: block;
+    /* float: right; */
+    top: 4%;
+    color: #f0bf2d;
+}
+
+.card-body .danhgia-text {
+    float: right;
+    color: #ccc;
+    font-size: 12px;
+    position: absolute;
+    top: 12%;
+    right: 4%;
+}
+
+.btn-search {
+    position: absolute;
+    display: flex;
+    right: 0;
+    left: 105px;
+    bottom: 20px;
+    justify-content: space-evenly;
+}
+
+.btn-search input {
+    outline: none;
+    border-radius: 20px;
+    border: 1px solid rgb(57, 242, 255);
+    background: none;
+    padding: 2% 10%
+}
+
+.btn-search input:hover {
+    background-color: olivedrab;
+    color: #fff;
+}
+
+.btn-search button {
+    border-radius: 50%;
+    border: 2px solid olivedrab;
+
+}
+
+.btn-search button:hover {
+    background-color: olivedrab;
+    color: #fff;
+    transition: 0.3s;
+}
+
+/* Phân Trang */
+.pagination_chuyentrang {
+    margin: 30px 0 0px 0;
+
+}
+
+.pagination {
+    justify-content: center;
+    float: right;
+}
+
+.pagination a {
+    border-radius: 50%;
+    color: black;
+    float: left;
+    font-size: 17px;
+    padding: 12px 21px;
+    text-decoration: none;
+    /* transition: background-color .3s; */
+}
+
+.pagination a.active {
+    background-color: olivedrab;
+    color: white;
+}
+
+.pagination a:hover:not(.active:hover) {
+    color: #fff;
+    background-color: olivedrab;
+
+}
+
+/* END phân trang */
+/* Content right end */
+
+.back_to_top {
+
+    background: #4897e0;
+    position: fixed;
+    bottom: 16px;
+    right: 32px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    color: #000;
+    text-decoration: none;
+    opacity: 0;
+    pointer-events: none;
+    transition: all .4s;
+
+
+}
+
+.back_to_top.active {
+    bottom: 32px;
+    pointer-events: auto;
+    opacity: 1;
+}
+
+.chat_client {
+    position: fixed;
+    bottom: 90px;
+    right: 32px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    color: #000;
+    text-decoration: none;
+    opacity: 1;
+    pointer-events: auto;
+    transition: all .4s;
+    background-color: #e5ff66;
+}
+/* Y Kien  */
+#ykien {
+    background-image: url(../../images/Home/nenbackground.png);
+    margin-top: 8px;
+    padding: 16px 0;
+}
+
+/* End Y Kien */
+
+/* FOOTER */
+#footer {
+    margin-top: 12px;
+    padding: 4px;
+    background-color: #2b2b2b;
+}
+
+#footer .row {
+    margin-top: 48px;
+}
+input[type=submit]{
+    float: right;
+    display: inline-block;
+
+}
+#ykien{
+    
+}
+
+#footer .ti {
+    display: flex;
+    padding: 0;
+}
+
+#footer .ti a {
+    margin-left: -10px;
+    padding: 0 8px;
+    text-decoration: none;
+    color: #fff;
+}
+
+#footer .ti a i:hover {
+    color: aqua;
+}
+
+#footer .ti i[class*="ti-"] {
+    border: 1px solid #fff;
+    border-radius: 50%;
+    padding: 8px;
+}
+
+#footer h4 {
+    font-family: tahoma;
+    font-size: 24px;
+    font-weight: 400;
+    color: #fff;
+
+}
+
+#footer h6 {
+    color: #fff;
+    font-size: 14px;
+}
+
+#footer p {
+    color: #ccc;
+    font-size: 12px;
+}
+
+#footer .item {}
+
+#footer ul li {
+    list-style-type: none;
+    padding: 0 12px;
+}
+
+#footer .footer-menu {
+    padding-left: 40px;
+}
+
+#footer ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#footer ul li a:hover {
+    color: rgb(45, 132, 212);
+}

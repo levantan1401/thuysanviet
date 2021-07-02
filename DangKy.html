@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/Acount.css">
+    <link rel="stylesheet" href="./assets/fonts/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="./assets/Bootstrap/function/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <title>Đăng Ký</title>
+</head>
+
+<body>
+    <div id="main">
+        <div class="container">
+            <div class="truchinh" style="margin-top: -86px;">
+                <div class="right">
+                    <img style="width: 400px;" src="../DoAnCoSo1/images/Home/shrimp.png" alt="">
+                </div>
+                <div class="form-group text-center">
+                    <h2 class="text-center ">TẠO TÀI KHOẢN</h2>
+                    <form action="./DangNhap.html" class="form-container" onsubmit=" return validate()">
+                        <input id="user" class="form-control" type="text" name="Full-name" placeholder="Nhập Họ và Tên">
+                        <input id="email" class="form-control" type="email" name="email" placeholder="Nhập Email">
+                        <input id="pass1" class="form-control" type="password" name="pwd" placeholder="Mật Khẩu">
+                        <input id="pass2" class="form-control" type="password" name="pwd"
+                            placeholder=" Nhập LạiMật Khẩu">
+                        <p id="error1"></p>
+                        <div class="btn-group-vertical">
+                            <input type="button" class="btn btn-primary" value="Đăng Ký" style="width: 350px;"
+                                onclick="checkDK();"></input>
+                        </div>
+                    </form>
+                </div>
+                <div class="left">
+                    <img style="width: 400px;" src="../DoAnCoSo1/images/Home/fish.png" alt="">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        // function checkPass() {
+        //     var email = document.querySelector("#email");
+        //     var pass1 = document.querySelector("#pass1");
+        //     var pass2 = document.querySelector("#pass2");
+        //     var email = document.getElementById('email');
+        //     var filter = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        //     if (!filter.test(email.value)) {
+        //         alert('Hay nhap dia chi email hop le.\nExample@gmail.com');
+        //         email.focus;
+        //         return false;
+        //     }else if(pass1.value != pass2.value){
+        //         alert("Không trùng mật khẩu");
+        //         email.focus;
+        //         return false;
+        //     }
+        //     else {
+        //         alert('OK roi day, Email nay hop le.');
+        //     }
+        // }
+        function checkDK() {
+            var email = document.querySelector("#email");
+            var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+            var pass = document.querySelector("#pass1");
+            var repass = document.querySelector("#pass2");
+            if(!filter.test(email.value)){
+                alert('Email bắt buộc phải chứa @.');
+                email.focus;
+                return false;
+            }
+            else if(pass.value != repass.value){
+                // document.querySelector('#error1').innerHTML = 'Không khớp mật khẩu';
+                repass.style.border = '1px solid red';
+                pass.style.border = '1px solid red';
+                alert('Không khớp mật khẩu');
+                return false;
+            }
+            else {
+                alert('Đăng Ký Thành công');
+                window.location.href = "./DangNhap.html";
+            }
+
+        };
+    </script>
+</body>
+
+</html>

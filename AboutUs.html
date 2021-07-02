@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./assets/img/Home/Logo.jpg" type="image/x-icon">
+  <title>About Us - Nuôi Trồng thủy sản</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <!-- Popper JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="./assets/fonts/fontawesome-free-5.15.3-web/css/all.min.css">
+  <link rel="stylesheet" href="./assets/fonts/themify-icons/themify-icons.css">
+  <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"> -->
+  <link rel="stylesheet" href="./assets/css/css_about_us.css">
+  <link rel="stylesheet" href="./assets/css/reponsive_homepage.css">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+  <div id="main" style="height: 3000px;">
+    <div class="header__nho" data-aos="fade">
+      <div class="header__nho-Social-Network">
+        <ul class="Social-Network__ul">
+          <li class="Social-Network__li">
+            <i class="ti-facebook"></i>
+          </li>
+          <li class="Social-Network__li"> 
+            <i class="ti-pinterest"></i>
+          </li>
+          <li class="Social-Network__li">
+            <i class="ti-twitter"></i>
+          </li>
+          <li class="Social-Network__li">
+            <i class="ti-skype"></i>
+          </li>
+          <li class="Social-Network__li">
+            <i class="ti-instagram"></i>
+          </li>
+
+        </ul>
+      </div>
+      <div class="header__nho-item">
+        <ul class="header__nho-item-ul">
+          <li class="header__nho_search">
+            <div class="input-group-append">
+              <input style="border-radius: 20px;border:none; outline: none; padding-left: 12px;" type="text"
+                placeholder="Search">
+              <button style="border-radius: 20px;" class="btn btn-info ti-search" type="submit"></button>
+            </div>
+          </li>
+          <li class="header__nho-item-li header__nho-item-li-lag">
+            <a href="#" class="link link1"><i class="header__nho-item_ke-doc"> VI</i></a>
+          </li>
+          <li class="header__nho-item-li header__nho-item-li-lag">
+            <a href="#" class="link"><i> EN</i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <nav>
+      <ul>
+          <li>
+              <div class="logo">
+                  <img style="width: 30%; margin-left: 35%;" src="./images/Logo1.jpg" alt="logo">
+              </div>
+          </li>
+          <li><a href="./index.html">Trang Chủ<i class="" aria-hidden="true"></i></a></li>
+          <li><a href="./tintuc.html">Tin Tức<i class="" aria-hidden="true"></i></a></li>
+          <li><a href="./giaiphap.html">Giải pháp<i class="" aria-hidden="true"></i></a></li>
+          <li><a href="./sanpham.html">Sản phẩm</a></li>
+          <li><a href="./AboutUs.html">Giới thiệu <i class="" aria-hidden="true"></i></a></li>
+      </ul>
+      <ul class="nav-right">
+          <li><a href="./DangNhap.html"><i class="fa fa-user dangnhap" aria-hidden="true"
+                      style="font-size: 16px;"></i></a>
+          </li>
+          <li> <a href=""><i class="fa fa-shopping-cart dangnhap" aria-hidden="true" style="font-size: 16px;"></i>
+              </a>
+
+          </li>
+          <li><a href="">
+                  <i class="fa fa-bars thanhmenu" aria-hidden="true" style="font-size: 16px;"></i></a></li>
+      </ul>
+      <div class="mobile_nav">
+          <div class="user">
+              <span><a href="./DangNhap.html"><i class="fa fa-user-circle"
+                          style="font-size: 16px;"></i></a></span>
+          </div>
+          <div class="thanh_menu">
+              <span onclick="OpenNav()"><i class="fa fa-bars" style="font-size: 16px; color: #000;"></i></span>
+          </div>
+          <div class="logo_mobile">
+              <div class="logo_main text-center">
+                  <img style="width: 30%; margin-left: 35%;" src="./images/Logo1.jpg" alt="logo">
+              </div>
+          </div>
+          <div id="slide_nav_moblie" class="sidenav">
+              <p class="closebtn" onclick="CloseNav()">&times;</p>
+              <a href="./index.html">Trang Chủ<i class="" aria-hidden="true"></i></a>
+              <a href="./tintuc.html">Tin Tức<i class="" aria-hidden="true"></i></a>
+              <a href="./giaiphap.html">Giải pháp<i class="" aria-hidden="true"></i></a>
+              <a href="./sanpham.html">Sản phẩm</a></li>
+              <a href="./AboutUs.html">Giới thiệu <i class="" aria-hidden="true"></i></a>
+          </div>
+      </div>
+  </nav>
+    <!-- VIDEO -->
+    <div class="video_header">
+      <!-- <video id="contentVideo" controlslist="nodownload" class="banner__video" autoplay="" loop="" muted=""
+        playsinline="">
+        <source src="./assets/video/15169693-preview.mp4" type="video/mp4">
+      </video> -->
+      <!-- <img src="./assets/img/Home/fisherman-4305368_1280.jpg" alt="" style="width: 100%;height:540px ;inset:0"> -->
+      <div id="particle-canvas"></div>
+    </div>
+    <div class="video-text">
+      <!-- <h2 class="text-content">ABOUT US</h2> -->
+    </div>
+    <!-- START CONTENT  -->
+    <div class="content">
+      <div class="header__content">
+        <div class="introduction">
+          <div class="container">
+            <div class="intro_left">
+              <p>Giới thiệu</p>
+              <h2>ASBiO - Nuôi trồng thủy sản</h2>
+            </div>
+            <div class="intro_right">
+              <p><span class="title_intro">Sứ Mệnh: </span> ASBiO luôn nỗ lực không ngừng trong việc nâng cao chất
+                lượng dịch vụ, tìm kiếm và hợp tác với
+                các đối tác uy tín để mang đến những sản phẩm tốt nhất, đáp ứng nhu cầu của quý khách hàng</p>
+              <p><span class="title_intro">Tầm nhìn: </span> đối tác uy tín để mang đến những sản phẩm tốt nhất, đáp
+                ứng nhu cầu của quý khách hàng</p>
+              <p><span class="title_intro">Nguyên Tắc làm việc:</span> đối tác uy tín để mang đến những sản phẩm tốt
+                nhất, đáp ứng nhu cầu của quý khách hàng</p>
+            </div>
+          </div>
+          <div class="intro_footer">
+            <div class="container">
+              <div class="motto">
+                <strong>Uy Tín - Chất Lượng - ABC</strong>
+                <p>Phương châm </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="content__contact">
+
+      </div>
+
+    </div>
+    <!-- END CONTENT -->
+    <!-- START CHUYEN GIA -->
+    <div class="expert">
+      <div class="container">
+        <h2>Chuyên Gia </h2>
+        <div class="row">
+          <div class="col-sm-12 col-md-4">
+            <div class="card">
+              <div class="card-body">
+                <img class="expert__img" src="./images/Home/CG N Huy Dien-TS.jpg" alt="">
+                <p class="card-text"> PGS.TS NGUYỄN HUY ĐIỀN</p>
+                <strong>Chuyên gia trong lĩnh vực:</strong>
+                <ol>
+                  <li>Nuôi trồng thủy sản,bệnh thủy sản</li>
+                  <li>Chuyển giao công nghệ nuôi thủy sản</li>
+                  <li>Xử lý môi trường, bệnh thủy sản</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-4">
+            <div class="card">
+              <div class="card-body">
+                <img class="expert__img" src="./images/Home/OIP.jpg" alt="">
+                <p class="card-text">PGS.TS Aaron Pottichen</p>
+                <strong>Chuyên gia trong lĩnh vực:</strong>
+                <ol>
+                  <li>Nuôi trồng thủy sản,bệnh thủy sản</li>
+                  <li>Chuyển giao công nghệ nuôi thủy sản</li>
+                  <li>Xử lý môi trường, bệnh thủy sản</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-4">
+            <div class="card">
+              <div class="card-body">
+                <img class="expert__img" src="./images/Home/TS Bui Quang te.jpg" alt="">
+                <p class="card-text"> TS BÙI QUANG TỀ</p>
+                <strong>Chuyên gia trong lĩnh vực:</strong>
+                <ol>
+                  <li>Bệnh Thủy Hải sản.</li>
+                  <li>Nuôi trồng thủy sản nước ngọt và nước lợ.</li>
+                  <li>An toàn vệ sinh thực phẩm thủy sản.</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END CHUYEN GIA -->
+    <!-- START THANH VIEN -->
+    <div class="member">
+      <div class="container">
+        <div class="member__list">
+          <div class="member__item">
+            <div class="member_img">
+              <img src="./images/tan1.jpg" alt="anh_cua_tan_dep_trai">
+            </div>
+            <div class="member_text">
+              <h2>LÊ VĂN TẤN</h2>
+              <p> ASBiO luôn nỗ lực không ngừng trong việc nâng cao chất
+                lượng dịch vụ, tìm kiếm và hợp tác với
+                các đối tác uy tín để mang đến những sản phẩm tốt nhất, đáp ứng nhu cầu của quý khách hàng</p>
+              <p> ASBiO luôn nỗ lực không ngừng trong việc nâng cao chất
+                lượng dịch vụ, tìm kiếm và hợp tác với
+                các đối tác uy tín để mang đến những sản phẩm tốt nhất, đáp ứng nhu cầu của quý khách hàng</p>
+            </div>
+          </div>
+          <div class="member__item">
+            <div class="member_img">
+              <img src="./images/triet.jpg" alt="anh_cua_tan_dep_trai">
+            </div>
+            <div class="member_text">
+              <h2>NGUYỄN MINH TRIẾT</h2>
+              <p> ASBiO luôn nỗ lực không ngừng trong việc nâng cao chất
+                lượng dịch vụ, tìm kiếm và hợp tác với
+                các đối tác uy tín để mang đến những sản phẩm tốt nhất, đáp ứng nhu cầu của quý khách hàng</p>
+              <p> ASBiO luôn nỗ lực không ngừng trong việc nâng cao chất
+                lượng dịch vụ, tìm kiếm và hợp tác với
+                các đối tác uy tín để mang đến những sản phẩm tốt nhất, đáp ứng nhu cầu của quý khách hàng</p>
+            </div>
+          </div>
+          <div class="member_footer">
+            <div class="container">
+              <strong>Thành Viên Nhóm</strong>
+              <p>ASBiO - Nuôi trồng Thủy sản</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END THANH VIEN -->
+    <!-- THONG KE SO LIEU -->
+    <div class="statistical">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-lg-4 cot">
+            <i class="fa fa-eye" aria-hidden="true"></i>
+            <div class="count" style="font-size: 32px; font-weight: 600;">
+              <b >5300</b>
+            </div>
+            <p>Lượt Truy Cập</p>
+          </div>
+          <div class="col-sm-12 col-lg-4 cot">
+            <i class="fa fa-cubes" aria-hidden="true"></i>
+            <div class="count" style="font-size: 32px; font-weight: 600;">
+              <b >500</b>
+            </div>
+            <p>Lượng Tiêu Thụ </p>
+          </div>
+          <div class="col-sm-12 col-lg-4 cot">
+            <i class="fa fa-comments" aria-hidden="true"></i>
+            <div class="count" style="font-size: 32px; font-weight: 600;">
+              <b >640</b>
+            </div>
+            <p>Phản hồi</p>
+          </div>
+        </div>
+        <div class="thong_tin_ve_web">
+          <p>Số Liệu</p>
+          <strong>WebSite ASBiO</strong>
+          <p>ASBiO luôn nỗ lực không ngừng trong việc nâng cao chất
+            lượng dịch vụ, tìm kiếm và hợp tác với
+            các đối tác uy tín để mang đến những sản phẩm tốt nhất, đáp ứng nhu cầu của quý khách hàng</p>
+        </div>
+      </div>
+    </div>
+    <!-- END THONG KE SO LIEU -->
+    <div class="back_to_top">
+      <a href="#">
+          <span>
+              <i class="fa fa-chevron-up" aria-hidden="true" style="font-size: 26px;width: 50px; color: #000; height: 38px;padding: 0px 14px;"></i>
+          </span>
+      </a>
+  </div>
+  <div class="chat_client">
+      <span>
+          <i class="fa fa-comment-alt" aria-hidden="true" style="font-size: 26px;width: 50px; color: #3e677ba6;; height: 38px;padding: 0px 12px;"></i>
+      </span>
+  </div>
+    <!-- START Y KIEN -->
+    <div id="ykien">
+      <div class="contact">
+        <div class="right">
+          <div class="container">
+            <h2>Đăng ký nhận bản tin</h2>
+            <p>Nhận bản tin từ Web AVG mọi ngày.</p>
+            <div class="form-group">
+              <label for="text">Tên của bạn:</label>
+              <input type="text" class="form-control" placeholder="Họ và tên" id="name">
+            </div>
+            <div class="form-group">
+              <label for="text">SĐT:</label>
+              <input type="text" class="form-control" placeholder="Số Điện Thoại" id="phone">
+            </div>
+            <div class="form-group">
+              <label for="email">Email address:</label>
+              <input type="email" class="form-control" placeholder="Email" id="email">
+            </div>
+            <div class="form-group">
+              <label for="comment">Comment:</label>
+              <textarea class="form-control" rows="5" id="comment"></textarea>
+            </div>
+            <div class="form-group">
+              <input type="submit" class="btn btn-primary" value="GỬI">
+            </div>
+          </div>
+          <div class="clear"></div>
+        </div>
+      </div>
+    </div>
+    <!-- END Y KIEN -->
+    <!-- START FOOTER -->
+    <div id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-3 ">
+            <h4>About Us</h4>
+            <p>ASBiO luôn nỗ lực không ngừng trong việc nâng cao chất lượng dịch vụ, tìm kiếm và hợp tác với
+              các
+              đối tác uy tín để mang đến những sản phẩm tốt nhất, đáp ứng nhu cầu của quý khách hàng</p>
+            <ul class="ti">
+              <li><a href=""><i class="ti-facebook"></i></a></li>
+              <li><a href=""><i class="ti-youtube"></i></a></li>
+              <li><a href=""><i class="ti-instagram"></i></a></li>
+              <li><a href=""><i class="ti-twitter"></i></a></li>
+            </ul>
+          </div>
+          <div class="col-sm-3 ">
+            <h4 style="margin-left: 40px;">Menu</h4>
+            <ul class="footer-menu">
+              <li><a href="">Home</a></li>
+              <li><a href="">Species</a></li>
+              <li><a href="">Solutions</a></li>
+              <li><a href="">About</a></li>
+              <li><a href="">Product</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-3 ">
+            <h4>Nhà Cung Cấp</h4>
+            <ul class="nhacungcap">
+              <li><a href="">Thăng Long</a></li>
+              <li><a href="">Tigervet</a></li>
+              <li><a href="">Vinavietco</a></li>
+              <li><a href="">APA</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-3 ">
+            <h4>Contact</h4>
+            <h6>Addres:</h6>
+            <p>470-Nam Kì Khởi Nghĩa - Hòa Quý - Ngũ Hành Sơn - ĐN</p>
+            <h6>Phone:</h6>
+            <p>0946.252.210</p>
+            <h6>Email:</h6>
+            <p>lvtan.20it1@gmail.vku.udn.vn</p>
+          </div>
+        </div>
+        <div class="button-footer">
+          <i style="color: beige;">Design by ASBiO</i>
+        </div>
+      </div>
+    </div>
+    <!-- END FOOTER -->
+  </div>
+  <script src="./assets/js/hieuung.js"></script>
+  <script src="./assets/js/back_to_top.js"></script>
+  <script src="./assets/js/js-home-page.js"></script>
+  <script >
+    (function ($) {
+            "use strict";
+
+            // Counter Number
+            $('.count').each(function () {
+                $(this).prop('Counter', 0).animate({
+                    Counter: $(this).text()
+                }, {
+                    duration: 5000,
+                    easing: 'swing',
+                    step: function (now) {
+                        $(this).text(Math.ceil(now));
+                    }
+                });
+            });
+        })(jQuery);
+  </script>
+</body>
+
+</html>

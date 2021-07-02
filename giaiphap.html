@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giải pháp - Nâng cao kinh nghiệm cho người nuôi trồng thủy sản</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-5.15.3-web/css/all.min.css">
+    <link rel="stylesheet" href="./assets/fonts/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="./assets/css/giaiphap.css">
+    <link rel="stylesheet" href="./assets/css/reponsive_homepage.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="main">
+        <div class="header__nho" data-aos="fade">
+            <div class="header__nho-Social-Network">
+                <ul class="Social-Network__ul">
+                    <li class="Social-Network__li">
+                        <i class="ti-facebook"></i>
+                    </li>
+                    <li class="Social-Network__li">
+                        <i class="ti-pinterest"></i>
+                    </li>
+                    <li class="Social-Network__li">
+                        <i class="ti-twitter"></i>
+                    </li>
+                    <li class="Social-Network__li">
+                        <i class="ti-skype"></i>
+                    </li>
+                    <li class="Social-Network__li">
+                        <i class="ti-instagram"></i>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="header__nho-item">
+                <ul class="header__nho-item-ul">
+                    <li class="header__nho_search">
+                        <div class="input-group-append">
+                            <input style="border-radius: 20px;border:none; outline: none; padding-left: 12px;"
+                                type="text" placeholder="Search">
+                            <button style="border-radius: 20px;" class="btn btn-info ti-search" type="submit"></button>
+                        </div>
+                    </li>
+                    <li class="header__nho-item-li header__nho-item-li-lag">
+                        <a href="#" class="link link1"><i class="header__nho-item_ke-doc"> VI</i></a>
+                    </li>
+                    <li class="header__nho-item-li header__nho-item-li-lag">
+                        <a href="#" class="link"><i> EN</i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li>
+                    <div class="logo">
+                        <img style="width: 30%; margin-left: 35%;" src="./images/Logo1.jpg" alt="logo">
+                    </div>
+                </li>
+                <li><a href="./index.html">Trang Chủ<i class="" aria-hidden="true"></i></a></li>
+                <li><a href="./tintuc.html">Tin Tức<i class="" aria-hidden="true"></i></a></li>
+                <li><a href="./giaiphap.html">Giải pháp<i class="" aria-hidden="true"></i></a></li>
+                <li><a href="./sanpham.html">Sản phẩm</a></li>
+                <li><a href="./AboutUs.html">Giới thiệu <i class="" aria-hidden="true"></i></a></li>
+            </ul>
+            <ul class="nav-right">
+                <li><a href="./DangNhap.html"><i class="fa fa-user dangnhap" aria-hidden="true"
+                            style="font-size: 16px;"></i></a>
+                </li>
+                <li> <a href=""><i class="fa fa-shopping-cart dangnhap" aria-hidden="true" style="font-size: 16px;"></i>
+                    </a>
+                    
+                </li>
+                <li><a href="">
+                        <i class="fa fa-bars thanhmenu" aria-hidden="true" style="font-size: 16px;"></i></a></li>
+            </ul>
+            <div class="mobile_nav">
+                <div class="user">
+                    <span><a href="./DangNhap.html"><i class="fa fa-user-circle"
+                                style="font-size: 16px;"></i></a></span>
+                </div>
+                <div class="thanh_menu">
+                    <span onclick="OpenNav()"><i class="fa fa-bars" style="font-size: 16px; color: #000;"></i></span>
+                </div>
+                <div class="logo_mobile">
+                    <div class="logo_main text-center">
+                        <img style="width: 30%; margin-left: 35%;" src="./images/Logo1.jpg" alt="logo">
+                    </div>
+                </div>
+                <div id="slide_nav_moblie" class="sidenav">
+                    <p class="closebtn" onclick="CloseNav()">&times;</p>
+                    <a href="./index.html">Trang Chủ<i class="" aria-hidden="true"></i></a>
+                    <a href="./tintuc.html">Tin Tức<i class="" aria-hidden="true"></i></a>
+                    <a href="./giaiphap.html">Giải pháp<i class="" aria-hidden="true"></i></a>
+                    <a href="./sanpham.html">Sản phẩm</a></li>
+                    <a href="./AboutUs.html">Giới thiệu <i class="" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </nav>
+        <div class="top-content">
+            <div class="container">
+                <div id="carousel-example" class="carousel slide">
+                    <div class="carousel-inner row w-100 mx-auto" role="listbox">
+                        <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3 active">
+                            <img src="./images/Home/thang-long-2021.gif" class="img-fluid mx-auto d-block" alt="img1">
+                        </div>
+                        <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+                            <img src="./images/Home/Uni-President-2021.gif" class="img-fluid mx-auto d-block"
+                                alt="img2">
+                        </div>
+                        <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+                            <img src="./images/Home/vietshrimp-2022-new.jpg" class="img-fluid mx-auto d-block"
+                                alt="img3">
+                        </div>
+                        <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+                            <img src="./images/Home/web_thuysan-032021.gif" class="img-fluid mx-auto d-block"
+                                alt="img4">
+                        </div>
+                    </div>
+                    <!-- <a class="carousel-control-prev" href="#carousel-example" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carousel-example" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a> -->
+                </div>
+            </div>
+        </div>
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-8">
+                        <div class="top-tintuc">
+                            <h3>Giải Pháp</h3>
+                            <hr>
+                            <div class="chuyentrang pl-3 mt-3 mb-3">
+                                <ul class="nav nav-pills" role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" data-toggle="pill" href="#home">BỆNH LÝ VỀ TÔM</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" data-toggle="pill" href="#menu1">BỆNH LÝ VỀ CÁ</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <!-- Tab panes -->
+                            <div class="tab-content mt-lg-n4">
+                                <div id="home" class="container tab-pane active"><br>
+                                    <div class="row contact-title">
+                                        <div class="col-sm-6">
+                                            <a href="">
+                                                <h4>Phòng trị bệnh<br>phân trắng trên tôm <span>1 giờ trước</span>
+                                                </h4>
+                                            </a>
+                                            <p>(TSVN) – Nuôi tôm an toàn sinh học đang được nhiều địa phương trên cả
+                                                nước áp
+                                                dụng,
+                                                đem lại hiệu quả cao trong việc kiểm soát mầm bệnh.Đây là hướng đi bền
+                                                vững mà
+                                                ngành
+                                                nuôi tôm công nghiệp Việt Nam đang hướng tới.</p>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <img src="./images/Home/benh phan trang.jpg " alt=""
+                                                style="width: 100%; padding: 8px 0;">
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="row">
+                                        <div class="col-sm-4">
+                                            <a href="">
+                                                <h4>Kỹ Thuật ươm tôm giống</h4>
+
+                                            </a>
+                                            <p>(TSVN) – Ương tôm giống trước khi thả nuôi là biện pháp giúp nâng cao tỷ
+                                                lệ sống,
+                                                giảm
+                                                chi phí vụ nuôi.</p>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <a href="">
+                                                <h4>Sản xuất giống cá lóc</h4>
+
+                                            </a>
+                                            <p>(TSVN) – Thực hiện tốt kỹ thuật sản xuất giống cá lóc giúp tăng chất
+                                                lượng con
+                                                giống,
+                                                góp
+                                                phần nâng cao tỷ lệ sống cá thương phẩm, tăng lợi nhuận cho người nuôi.
+                                            </p>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <a href="">
+                                                <h4>Sản xuất giống cá lóc</h4>
+
+                                            </a>
+                                            <p>(TSVN) – Thực hiện tốt kỹ thuật sản xuất giống cá lóc giúp tăng chất
+                                                lượng con
+                                                giống,
+                                                góp
+                                                phần nâng cao tỷ lệ sống cá thương phẩm, tăng lợi nhuận cho người nuôi.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="row contact-title">
+                                        <div class="col-sm-6">
+                                            <a href="">
+                                                <h4>Nuôi tôm sinh học</h4>
+                                            </a>
+                                            <p>(TSVN) – Nuôi tôm an toàn sinh học đang được nhiều địa phương trên cả
+                                                nước áp
+                                                dụng,
+                                                đem lại hiệu quả cao trong việc kiểm soát mầm bệnh.Đây là hướng đi bền
+                                                vững
+                                                mà
+                                                ngành
+                                                nuôi tôm công nghiệp Việt Nam đang hướng tới.</p>
+                                            <span style="font-size: 14px;">1 giờ trước <i
+                                                    class="fa fa-comment-dots ml-2"></i>15</span>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <img src="./images/Home/benh phan trang.jpg" alt="" style="width: 100%;">
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="row contact-title">
+                                        <div class="col-sm-6">
+                                            <a href="">
+                                                <h4>Nuôi tôm sinh học</h4>
+                                            </a>
+                                            <p>(TSVN) – Nuôi tôm an toàn sinh học đang được nhiều địa phương trên cả
+                                                nước áp
+                                                dụng,
+                                                đem lại hiệu quả cao trong việc kiểm soát mầm bệnh.Đây là hướng đi bền
+                                                vững
+                                                mà
+                                                ngành
+                                                nuôi tôm công nghiệp Việt Nam đang hướng tới.</p>
+                                            <span style="font-size: 14px;">11 giờ trước <i
+                                                    class="fa fa-comment-dots ml-2"></i>15</span>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <img src="./images/Home/benh phan trang.jpg" alt="" style="width: 100%;">
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="row contact-title">
+                                        <div class="col-sm-6">
+                                            <a href="">
+                                                <h4>Nuôi tôm sinh học</h4>
+                                            </a>
+                                            <p>(TSVN) – Nuôi tôm an toàn sinh học đang được nhiều địa phương trên cả
+                                                nước áp
+                                                dụng,
+                                                đem lại hiệu quả cao trong việc kiểm soát mầm bệnh.Đây là hướng đi bền
+                                                vững
+                                                mà
+                                                ngành
+                                                nuôi tôm công nghiệp Việt Nam đang hướng tới.</p>
+                                            <span style="font-size: 14px;">1 giờ trước <i
+                                                    class="fa fa-comment-dots ml-2"></i>15</span>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <img src="./images/Home/benh phan trang.jpg" alt="" style="width: 100%;">
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="row contact-title">
+                                        <div class="col-sm-6">
+                                            <a href="">
+                                                <h4>Nuôi tôm sinh học</h4>
+                                            </a>
+                                            <p>(TSVN) – Nuôi tôm an toàn sinh học đang được nhiều địa phương trên cả
+                                                nước áp
+                                                dụng,
+                                                đem lại hiệu quả cao trong việc kiểm soát mầm bệnh.Đây là hướng đi bền
+                                                vững
+                                                mà
+                                                ngành
+                                                nuôi tôm công nghiệp Việt Nam đang hướng tới.</p>
+                                            <span style="font-size: 14px;">11 giờ trước <i
+                                                    class="fa fa-comment-dots ml-2"></i>15</span>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <img src="./images/Home/benh phan trang.jpg" alt="" style="width: 100%;">
+                                        </div>
+                                    </div>
+                                    <hr>
+
+                                </div>
+
+                                <!-- End Card -->
+                                <div id="menu1" class="container tab-pane fade "><br>
+                                    <div class="row contact-title">
+                                        <div class="col-sm-6">
+                                            <a href="">
+                                                <h4>Phòng trị bệnh<br>phân trắng trên cá <span>1 giờ trước</span>
+                                                </h4>
+                                            </a>
+                                            <p>(TSVN) – Nuôi tôm an toàn sinh học đang được nhiều địa phương trên cả
+                                                nước áp
+                                                dụng,
+                                                đem lại hiệu quả cao trong việc kiểm soát mầm bệnh.Đây là hướng đi bền
+                                                vững
+                                                mà
+                                                ngành
+                                                nuôi tôm công nghiệp Việt Nam đang hướng tới.</p>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <img src="./images/Home/benh dau vang.jpg" alt=""
+                                                style="width: 100%; padding: 8px 0;">
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="row">
+                                        <div class="col-sm-4">
+                                            <a href="">
+                                                <h4>Kỹ Thuật ươm tôm giống</h4>
+
+                                            </a>
+                                            <p>(TSVN) – Ương tôm giống trước khi thả nuôi là biện pháp giúp nâng cao tỷ
+                                                lệ
+                                                sống,
+                                                giảm
+                                                chi phí vụ nuôi.</p>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <a href="">
+                                                <h4>Sản xuất giống cá lóc</h4>
+
+                                            </a>
+                                            <p>(TSVN) – Thực hiện tốt kỹ thuật sản xuất giống cá lóc giúp tăng chất
+                                                lượng
+                                                con
+                                                giống,
+                                                góp
+                                                phần nâng cao tỷ lệ sống cá thương phẩm, tăng lợi nhuận cho người nuôi.
+                                            </p>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <a href="">
+                                                <h4>Sản xuất giống cá lóc</h4>
+
+                                            </a>
+                                            <p>(TSVN) – Thực hiện tốt kỹ thuật sản xuất giống cá lóc giúp tăng chất
+                                                lượng
+                                                con
+                                                giống,
+                                                góp
+                                                phần nâng cao tỷ lệ sống cá thương phẩm, tăng lợi nhuận cho người nuôi.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="row contact-title">
+                                        <div class="col-sm-6">
+                                            <a href="">
+                                                <h4>Nuôi tôm sinh học</h4>
+                                            </a>
+                                            <p>(TSVN) – Nuôi tôm an toàn sinh học đang được nhiều địa phương trên cả
+                                                nước áp
+                                                dụng,
+                                                đem lại hiệu quả cao trong việc kiểm soát mầm bệnh.Đây là hướng đi bền
+                                                vững
+                                                mà
+                                                ngành
+                                                nuôi tôm công nghiệp Việt Nam đang hướng tới.</p>
+                                            <span style="font-size: 14px;">1 giờ trước <i
+                                                    class="fa fa-comment-dots ml-2"></i>15</span>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <img src="./images/Home/benh phan trang.jpg " alt="" style="width: 100%;">
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="row contact-title">
+                                        <div class="col-sm-6">
+                                            <a href="">
+                                                <h4>Nuôi tôm sinh học</h4>
+                                            </a>
+                                            <p>(TSVN) – Nuôi tôm an toàn sinh học đang được nhiều địa phương trên cả
+                                                nước áp
+                                                dụng,
+                                                đem lại hiệu quả cao trong việc kiểm soát mầm bệnh.Đây là hướng đi bền
+                                                vững
+                                                mà
+                                                ngành
+                                                nuôi tôm công nghiệp Việt Nam đang hướng tới.</p>
+                                            <span style="font-size: 14px;">11 giờ trước <i
+                                                    class="fa fa-comment-dots ml-2"></i>15</span>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <img src="./images/Home/benh phan trang.jpg" alt="" style="width: 100%;">
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="row contact-title">
+                                        <div class="col-sm-6">
+                                            <a href="">
+                                                <h4>Nuôi tôm sinh học</h4>
+                                            </a>
+                                            <p>(TSVN) – Nuôi tôm an toàn sinh học đang được nhiều địa phương trên cả
+                                                nước áp
+                                                dụng,
+                                                đem lại hiệu quả cao trong việc kiểm soát mầm bệnh.Đây là hướng đi bền
+                                                vững
+                                                mà
+                                                ngành
+                                                nuôi tôm công nghiệp Việt Nam đang hướng tới.</p>
+                                            <span style="font-size: 14px;">1 giờ trước <i
+                                                    class="fa fa-comment-dots ml-2"></i>15</span>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <img src="./images/Home/benh phan trang.jpg " alt="" style="width: 100%;">
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="row contact-title">
+                                        <div class="col-sm-6">
+                                            <a href="">
+                                                <h4>Nuôi tôm sinh học</h4>
+                                            </a>
+                                            <p>(TSVN) – Nuôi tôm an toàn sinh học đang được nhiều địa phương trên cả
+                                                nước áp
+                                                dụng,
+                                                đem lại hiệu quả cao trong việc kiểm soát mầm bệnh.Đây là hướng đi bền
+                                                vững
+                                                mà
+                                                ngành
+                                                nuôi tôm công nghiệp Việt Nam đang hướng tới.</p>
+                                            <span style="font-size: 14px;">11 giờ trước <i
+                                                    class="fa fa-comment-dots ml-2"></i>15</span>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <img src="./images/Home/benh phan trang.jpg " alt="" style="width: 100%;">
+                                        </div>
+                                    </div>
+                                    <hr>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                        <!-- CHUYEN GIA -->
+                        <div class="col-sm-4">
+                            <div class="chuyengia">
+                                <h3>Kết nối chuyên gia</h3>
+                                <div class="chuyengia">
+                                    <div class="chuyengia__item">
+                                        <h5>Le Van Tan</h5>
+                                        <div class="anhchuyengia">
+                                            <img src="./images/tan1.jpg" alt="" style="width: 50%;">
+
+                                        </div>
+                                        <p>(TSVN) – Nuôi tôm an toàn sinh học đang được nhiều địa phương trên cả nước áp
+                                            dụng,
+                                            đem lại hiệu quả cao trong việc kiểm soát mầm bệnh.Đây là hướng đi bền vững
+                                            mà
+                                            ngành
+                                            nuôi tôm công nghiệp Việt Nam đang hướng tới.</p>
+                                    </div>
+                                    <div class="chuyengia__item">
+                                        <h5>Nguyen Minh Triet</h5>
+                                        <div class="anhchuyengia">
+                                            <img src="./images/triet.jpg" alt="" style="width: 50%;">
+
+                                        </div>
+                                        <p>(TSVN) – Nuôi tôm an toàn sinh học đang được nhiều địa phương trên cả nước áp
+                                            dụng,
+                                            đem lại hiệu quả cao trong việc kiểm soát mầm bệnh.Đây là hướng đi bền vững
+                                            mà
+                                            ngành
+                                            nuôi tôm công nghiệp Việt Nam đang hướng tới.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sanpham">
+                                <h3>Sản Phẩm</h3>
+                                <div class="sanpham">
+                                    <div class="tom">
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <div class="card">
+                                                    <a href="">
+                                                        <img class="card-img-top" src="./assets/img/SanPham/tom1.jpg"
+                                                            alt="Card image" style="width:100%">
+                                                    </a>
+                                                    <div class="card-body">
+                                                        <p>DOXLY-20</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="card">
+                                                    <a href="">
+                                                        <img class="card-img-top" src="./assets/img/SanPham/tom2.jpg"
+                                                            alt="Card image" style="width:100%">
+                                                    </a>
+                                                    <div class="card-body">
+                                                        <p>APA-FLO</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col">
+                                                <div class="card">
+                                                    <a href="">
+                                                        <img class="card-img-top" src="./assets/img/SanPham/tom3.jpg"
+                                                            alt="Card image" style="width:100%">
+                                                    </a>
+                                                    <div class="card-body">
+                                                        <p>APA-STORA</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="card">
+                                                    <a href="">
+                                                        <img class="card-img-top" src="./assets/img/SanPham/tom4.jpg"
+                                                            alt="Card image" style="width:100%">
+                                                    </a>
+                                                    <div class="card-body">
+                                                        <p>APA-TAKA</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="Phuongphap" style="background-color:linear-gradient( to right,#fff ,#000 )">
+                                <h3>Tin Tức</h3>
+                                <div class="giaiphap_content">
+                                    <div class="phuongphap_item">
+                                        <p>25/06/2021</p>
+                                        <a href="">Phòng trị bệnh phân trắng trên tôm</a>
+                                    </div>
+                                    <hr>
+                                    <div class="phuongphap_item">
+                                        <p>25/06/2021</p>
+                                        <a href="">Phòng trị bệnh phân trắng trên tôm</a>
+                                    </div>
+                                    <hr>
+                                    <div class="phuongphap_item">
+                                        <p>25/06/2021</p>
+                                        <a href="">Phòng trị bệnh phân trắng trên tôm</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+
+            <div aria-label="Page navigation example" class="ngang__cach">
+                <ul class="pagination justify-content-end">
+                    <li class="page-item disabled">
+                        <a class="page-link " href="#" style="background-color: rgb(39, 132, 185); color: #fff;">1</a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item"><a class="page-link" href="#">...</a></li>
+                    <li class="page-item"><a class="page-link" href="#">20</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="#">Next</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="back_to_top">
+            <a href="#">
+                <span>
+                    <i class="fa fa-chevron-up" aria-hidden="true" style="font-size: 26px;width: 50px; color: #000; height: 38px;padding: 0px 14px;"></i>
+                </span>
+            </a>
+        </div>
+        <div class="chat_client">
+            <span>
+                <i class="fa fa-comment-alt" aria-hidden="true" style="font-size: 26px;width: 50px; color: #3e677ba6;; height: 38px;padding: 0px 12px;"></i>
+            </span>
+        </div>
+        <div id="ykien">
+            <div class="contact">
+                <div class="right">
+                    <div class="container">
+                        <h2>Đăng ký nhận bản tin</h2>
+                        <p>Nhận bản tin từ Web AVG mọi ngày.</p>
+                        <div class="form-group">
+                            <label for="text">Tên của bạn:</label>
+                            <input type="text" class="form-control" placeholder="Họ và tên" id="name">
+                        </div>
+                        <div class="form-group">
+                            <label for="text">SĐT:</label>
+                            <input type="text" class="form-control" placeholder="Số Điện Thoại" id="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email address:</label>
+                            <input type="email" class="form-control" placeholder="Email" id="email">
+                        </div>
+                        <div class="form-group">
+                            <label for="comment">Comment:</label>
+                            <textarea class="form-control" rows="5" id="comment"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" class="btn btn-primary" value="GỬI">
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-3 ">
+                        <h4>About Us</h4>
+                        <p>ASBiO luôn nỗ lực không ngừng trong việc nâng cao chất lượng dịch vụ, tìm kiếm và hợp tác với
+                            các
+                            đối tác uy tín để mang đến những sản phẩm tốt nhất, đáp ứng nhu cầu của quý khách hàng</p>
+                        <ul class="ti">
+                            <li><a href=""><i class="ti-facebook"></i></a></li>
+                            <li><a href=""><i class="ti-youtube"></i></a></li>
+                            <li><a href=""><i class="ti-instagram"></i></a></li>
+                            <li><a href=""><i class="ti-twitter"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-3 ">
+                        <h4 style="margin-left: 40px;">Menu</h4>
+                        <ul class="footer-menu">
+                            <li><a href="">Home</a></li>
+                            <li><a href="">Species</a></li>
+                            <li><a href="">Solutions</a></li>
+                            <li><a href="">About</a></li>
+                            <li><a href="">Product</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-3 ">
+                        <h4>Nhà Cung Cấp</h4>
+                        <ul class="nhacungcap">
+                            <li><a href="">Thăng Long</a></li>
+                            <li><a href="">Tigervet</a></li>
+                            <li><a href="">Vinavietco</a></li>
+                            <li><a href="">APA</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-3 ">
+                        <h4>Contact</h4>
+                        <h6>Addres:</h6>
+                        <p>470-Nam Kì Khởi Nghĩa - Hòa Quý - Ngũ Hành Sơn - ĐN</p>
+                        <h6>Phone:</h6>
+                        <p>0946.252.210</p>
+                        <h6>Email:</h6>
+                        <p>lvtan.20it1@gmail.vku.udn.vn</p>
+                    </div>
+                </div>
+                <div class="button-footer">
+                    <i style="color: beige;">Design by ASBiO</i>
+                </div>
+            </div>
+        </div>
+
+
+
+        <script src="./assets/js/js-home-page.js">
+        </script>
+        <script src="./assets/js/back_to_top.js"></script>
+
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init({
+                // offset:200,
+                duration: 1000,
+            });
+        </script>
+</body>
+
+</html>
